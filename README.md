@@ -8,5 +8,5 @@ This will install the package in the directory.
 After that, you can import the python file doing for example 
 
 ```python
-import data_extraction.utils.coordinates_and_projection as cap
+import data_exploration.utils.coordinates_and_projection as cap
 ```
