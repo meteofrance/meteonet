@@ -1,1 +1,12 @@
-Test
+You can install this package by going in the dedicated directory (where you have clone the depository)
+
+```sh
+pip install -e .
+```
+
+This will install the package in the directory. 
+After that, you can import the python file doing for example 
+
+```python
+import data_extraction.utils.coordinates_and_projection as cap
+```
