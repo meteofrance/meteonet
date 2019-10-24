@@ -2,6 +2,8 @@ All these notebooks work with this configuration :
 
 *  Python 3.7.3
 *  numpy 1.17.1
+
+Optionnal :
 *  matplotlib 3.1.1
 *  basemap 1.2.0
 
