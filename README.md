@@ -17,9 +17,8 @@ To open easily a GRIB file with Python, it is necessary to install the packages 
     conda install -c conda-forge eccodes
     conda install -c conda-forge cfgrib
     conda install -c anaconda xarray
-    conda install -c anaconda basemap
 ```
-Optionnal : 
+Optionnal (to plot basemaps) : 
 ```sh
     conda install -c anaconda basemap
 ```
