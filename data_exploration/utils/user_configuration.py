@@ -4,7 +4,7 @@ from data_exploration.utils.coordinates_and_projection import *
 user = getpass.getuser() 
 
 if user == "larvorg":
-    path = "D:/prez_opendata/data/output/samples/"
+    path = "D:/MeteoNet/data_samples/"
     os.environ["PROJ_LIB"]="C:/Users/larvorg/AppData/Local/Continuum/anaconda3/Library/share" 
     os.environ["ECCODES_DEFINITION_PATH"]="C:/Users/larvorg/AppData/Local/Continuum/anaconda3/Library/share/eccodes/definitions" 
 elif user == "chabotv": 
