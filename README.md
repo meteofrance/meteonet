@@ -4,6 +4,7 @@ All these notebooks work with this configuration :
 *  numpy 1.17.1
 
 Optionnal :
+*  conda 4.7.12
 *  matplotlib 3.1.1
 *  basemap 1.2.0
 
