@@ -2,11 +2,7 @@ All these notebooks work with this configuration :
 
 *  Python 3.7.3
 *  numpy 1.17.1
-
-Optionnal :
-*  conda 4.7.12
 *  matplotlib 3.1.1
-*  basemap 1.2.0
 
 You can install this package by going in the dedicated directory (where you have clone the depository)
 
@@ -28,6 +24,10 @@ To open easily a GRIB file with Python, it is necessary to install the packages 
     conda install -c anaconda xarray
 ```
 Optionnal (to plot basemaps) : 
+
+*  conda 4.7.12
+*  basemap 1.2.0
+
 ```sh
     conda install -c anaconda basemap
 ```
