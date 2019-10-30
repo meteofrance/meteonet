@@ -1,6 +1,7 @@
 import getpass 
 import os 
-from data_exploration.utils.coordinates_and_projection import *
+from data_exploration.utils.constant import *
+
 user = getpass.getuser() 
 
 if user == "larvorg":
