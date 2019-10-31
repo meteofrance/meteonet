@@ -1,17 +1,8 @@
 # Prerequisites
 
-There are 2 ways of installation : either by pip or by Anaconda.
+There are 2 ways of installation : either by Anaconda (the recommended way) or by pip.
 
-## By pip
-* install Python 3
-* install pip
-
-and then, type in a terminal (cf requirements.txt file in this repository) :
-```sh
-pip install -r requirements.txt 
-```
-
-## By Anaconda
+## By Anaconda : the recommended way
 * install Anaconda with Python 3
 
 and then, type in a terminal **in this order** :
@@ -20,6 +11,15 @@ and then, type in a terminal **in this order** :
 conda install -c conda-forge eccodes
 conda install -c conda-forge cfgrib
 conda install -c anaconda xarray
+```
+
+## By pip
+* install Python 3
+* install pip
+
+and then, type in a terminal (cf requirements.txt file in this repository) :
+```sh
+pip install -r requirements.txt 
 ```
 
 ### Optionnal
