@@ -1,0 +1,6 @@
+numpy>=1.14.0
+pandas>=0.24.0
+matplotlib
+eccodes-python
+cfgrib
+xarray
