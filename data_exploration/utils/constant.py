@@ -1,3 +1,5 @@
+import numpy as np
+
 #coordinates of boundaries of study zones
 def create_dic_borne(N,S,W,E):
     dic = {
@@ -8,11 +10,27 @@ def create_dic_borne(N,S,W,E):
     }
     return dic
 
+def get_sat_coordinate(zone):
+    """
+    Return lat lon coordinate of satellite data 
+    """
+    lllat=DOMAINS[zone]['lry']    #lower left latitude
+    urlat=DOMAINS[zone]['uly']    #upper right latitude
+    lllon=DOMAINS[zone]['ulx']    #lower left longitude
+    urlon=DOMAINS[zone]['lrx']    #upper right longitude
+    d = {}
+    d["lon"] = np.arange(lllon,urlon-0.0425/2,0.0425)
+    d["lat"] = np.arange(urlat,lllat + 0.0425/2,-0.0425)
+    return d
 
 DOMAINS = {
     'NW'   :  create_dic_borne( 51.896, 46.25, -5.842, 2),
     'SE'  :  create_dic_borne( 46.25, 41.1, 2, 9.842)
     }
+
+SAT_COORD = { 'NW': get_sat_coordinate("NW"),
+              'SE': get_sat_coordinate("SE")
+}
 
 #projection system
 n_epsg = '4326'   #projection system used on the data -> EPSG:4326
