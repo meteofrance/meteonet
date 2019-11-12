@@ -42,6 +42,13 @@ To plot nice plots with basemaps, you can install the basemap library. The recom
 conda install -c anaconda basemap
 ```
 
+For some distributions, this installation of basemap  is not sufficient. 
+It it is needed to install *basemap-data-hires* doing 
+
+```sh
+conda install basemap-data-hires
+```
+
 ## In case of librairies import problems
 
 You could have problems when you use the librairies xarray or basemap. 
