@@ -1,3 +1,15 @@
+# Structure
+
+This repository is structured as follows :
+* *data_sample* : it contains samples of each data type sorted by data type (ground_stations, radar...)
+* *ground_stations* : notebooks to open data from ground_stations
+* *masks* : notebooks to open masks data (land-sea and relief masks)
+* *radar* : notebooks to open radar data
+* *satellite* : notebooks to open satellite data
+* *superimpose_data* : notebooks with tools to superimpose all data types (grid and punctual data, different initial resolutions...)
+* *utils* : python scripts useful for user configuration, functions useful to get coordinates, legends for plots...
+* *weather_models* : notebooks to open data from weather models
+
 # Prerequisites
 
 There are 2 ways of installation : either by Anaconda (the recommended way) or by pip.
@@ -28,6 +40,13 @@ To plot nice plots with basemaps, you can install the basemap library. The recom
 
 ```sh
 conda install -c anaconda basemap
+```
+
+For some distributions, this installation of basemap  is not sufficient. 
+It it is needed to install *basemap-data-hires* doing 
+
+```sh
+conda install basemap-data-hires
 ```
 
 ## In case of librairies import problems
