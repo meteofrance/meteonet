@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ### Optional
 
-To plot nice figures with basemaps, you can install the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
+To plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
 
 ```sh
 conda install -c anaconda basemap
