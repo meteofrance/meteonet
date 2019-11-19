@@ -10,9 +10,9 @@ This repository contains the following directories:
 * *utils*: python scripts useful for user configuration, functions useful to get coordinates, legends for plots...
 * *weather_models*: notebooks to open weather models data
 
-# Prerequisites
+# First installation step: install the dependencies
 
-There are 2 ways of installation : either with Anaconda (the recommended way) or with pip.
+There are 2 ways of installation: either with Anaconda (the recommended way) or with pip.
 
 ## Recommended: install with Anaconda
 * install Anaconda with Python 3
@@ -62,16 +62,17 @@ The solution is to indicate the path to the file 'epsg'.
 
 Examples of paths on Windows are indicated in the script utils/user_configuration.py.
 
-# Install the repository as a package
+# Second installation step: install the repository package
 
-You can install this package by going in the dedicated directory (where you have cloned the repository)
+Now that you have installed the dependencies, you can install the package located in our repository. This package contains libraries that will help you manipulate our data.
+
+Go to the directory where you have cloned the repository, and enter:
 
 ```sh
 pip install -e .
 ```
 
-This will install the package in the directory. 
-After that, you will be able to import the python files you need, for instance:
+You will then be able to import the python files you need, for instance:
 
 ```python
 import data_exploration.utils.coordinates_and_projection as cap
