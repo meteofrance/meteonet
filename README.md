@@ -1,20 +1,20 @@
 # Structure
 
-This repository is structured as follows :
-* *data_sample* : it contains samples of each data type sorted by data type (ground_stations, radar...)
-* *ground_stations* : notebooks to open data from ground_stations
-* *masks* : notebooks to open masks data (land-sea and relief masks)
-* *radar* : notebooks to open radar data
-* *satellite* : notebooks to open satellite data
-* *superimpose_data* : notebooks with tools to superimpose all data types (grid and punctual data, different initial resolutions...)
-* *utils* : python scripts useful for user configuration, functions useful to get coordinates, legends for plots...
-* *weather_models* : notebooks to open data from weather models
+This repository contains the following directories:
+* *data_sample*: samples of each data type (ground_stations, radar...)
+* *ground_stations*: notebooks to open ground_stations data
+* *masks*: notebooks to open masks data (land-sea and relief masks)
+* *radar*: notebooks to open radar data
+* *satellite*: notebooks to open satellite data
+* *superimpose_data*: notebooks with tools to superimpose all data types (grid and point data, different resolutions...)
+* *utils*: python scripts useful for user configuration, functions useful to get coordinates, legends for plots...
+* *weather_models*: notebooks to open weather models data
 
 # Prerequisites
 
-There are 2 ways of installation : either by Anaconda (the recommended way) or by pip.
+There are 2 ways of installation : either with Anaconda (the recommended way) or with pip.
 
-## By Anaconda : the recommended way
+## Recommended: install with Anaconda
 * install Anaconda with Python 3
 
 and then, type in a terminal **in this order** :
@@ -25,34 +25,34 @@ conda install -c conda-forge cfgrib
 conda install -c anaconda xarray
 ```
 
-## By pip
+## Alternative way of installation: with pip
 * install Python 3
 * install pip
 
-and then, type in a terminal (cf requirements.txt file in this repository) :
+and then, type in a terminal (cf requirements.txt file in this repository):
 ```sh
 pip install -r requirements.txt 
 ```
 
-### Optionnal
+### Optional
 
-To plot nice plots with basemaps, you can install the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
+To plot nice figures with basemaps, you can install the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
 
 ```sh
 conda install -c anaconda basemap
 ```
 
-For some distributions, this installation of basemap  is not sufficient. 
-It it is needed to install *basemap-data-hires* doing 
+For some distributions, this installation of basemap is not sufficient. 
+You might need to install *basemap-data-hires*:
 
 ```sh
 conda install basemap-data-hires
 ```
 
-## In case of librairies import problems
+## Troubleshooting: in case of librairies import issues
 
-You could have problems when you use the librairies xarray or basemap. 
-* problem with the xarray library -> PROBLEM OF TYPE "ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect"
+You could have issues when you use the librairies xarray or basemap. 
+* issue with the xarray library -> PROBLEM OF TYPE "ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect"
 
 The solution is to indicate the path to the file 'boot.def'. 
 
@@ -64,14 +64,14 @@ Examples of paths on Windows are indicated in the script utils/user_configuratio
 
 # Install the repository as a package
 
-You can install this package by going in the dedicated directory (where you have clone the depository)
+You can install this package by going in the dedicated directory (where you have cloned the repository)
 
 ```sh
 pip install -e .
 ```
 
 This will install the package in the directory. 
-After that, you can import the python file doing for example 
+After that, you will be able to import the python files you need, for instance:
 
 ```python
 import data_exploration.utils.coordinates_and_projection as cap
