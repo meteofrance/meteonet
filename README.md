@@ -59,7 +59,7 @@ import data_exploration.utils.coordinates_and_projection as cap
 ```
 
 
-### Optional setup
+### Optional installation
 
 To plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
 
