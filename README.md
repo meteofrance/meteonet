@@ -4,9 +4,11 @@ This repository is a toolbox to handle the MeteoNet dataset.
 
 *What is the MeteoNet Dataset ?*
 
+![](meteonet.png)
+
 It is about a reference reinforced dataset in Meteorology dedicated to Data Science subjects (Machine Learning, Deep Learning). The format is adapted for Data Scientists.
 
-This toolbox includes data samples and notebooks to explore and cross-check all the data types (grid or punctual data).
+This toolbox includes data samples and notebooks to explore and cross-check all data types (grid or punctual data).
 
 # Structure
 
