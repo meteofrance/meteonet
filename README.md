@@ -20,7 +20,7 @@ This repository contains the following directories:
 
 ## I - Install the dependencies
 
-There are 2 ways of installation: either with Anaconda (the recommended way) or with pip.
+2 installation ways are possible : either with Anaconda (the recommended way) or with pip.
 
 ### Recommended: install with Anaconda
 * install Anaconda with Python 3
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ## II - Install the repository package
 
-Now that you have installed the dependencies, you can install the package located in our repository. This package contains libraries that will help you manipulate our data.
+Once the dependencies installed, you can install the package located in our repository. This package contains libraries that will help you manipulate our data.
 
 Go to the directory where you have cloned the repository, and enter:
 
