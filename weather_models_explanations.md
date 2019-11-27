@@ -1,7 +1,7 @@
 ## French weather models 
 
-Météo-France produce weather models to forecast the weather. It solve physical equations which model the atmospheric, oceanic phenomenon... all physical behaviours which influence the weather. 
-It compute a lot of weather parameters (temperature, wind, humidity...) at different points on the globe in 4 dimensions (latitude, longitude, height and time).
+Météo-France produce weather models to forecast the weather. They solve physical equations which model the atmospheric, oceanic phenomenon... all physical behaviours which influence the weather. 
+They compute a lot of weather parameters (temperature, wind, humidity...) at different points on the globe in 4 dimensions (latitude, longitude, height and time).
 
 Each model runs several times per day at fixed time. Each execution is called a 'run'. Each time step for which we have weather forecasts is called a 'valid time'. (We find these terms, runs and valid times, in the files).
 On the globe surface, the points are spaced with regular latitude and longitude steps : this mesh of points is called a grid. 
@@ -18,5 +18,5 @@ The order of magnitudes of resolutions are the following :
 * ARPEGE : horizontal spatial resolution, up to 0.1° (~10km), 4 runs/day, forecasts up to 102 hours ahead 
 * AROME : horizontal spatial resolution, up to 0.01° (~1km), 8 runs/day, forecasts up to 48 hours ahead 
 
-All these characteristics have been choses following the compromises between the needs and the time computing and costs. 
+All these characteristics have been chosen following the compromises between the needs and the time computing and costs. 
 
