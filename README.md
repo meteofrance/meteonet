@@ -4,9 +4,23 @@ This repository is a toolbox to handle the MeteoNet dataset.
 
 *What is the MeteoNet Dataset ?*
 
-![](meteonet.png)
+<p align="center">
+  <img src="./MeteoNet.PNG">
+</p>
 
 It is about a reference reinforced dataset in Meteorology dedicated to Data Science subjects (Machine Learning, Deep Learning). The format is adapted for Data Scientists.
+
+Spatio-temporal framework : 
+* 3 years : from 2016 to 2018
+* 2 geographic area :  north-western and south-eastern quarters of France
+
+Data types :
+* Ground station observations
+* Masks (land-sea and relief)
+* Radar observations
+* Satellite observations
+* Weather models forecasts 
+
 
 This toolbox includes data samples and notebooks to explore and cross-check all data types (grid or punctual data).
 
