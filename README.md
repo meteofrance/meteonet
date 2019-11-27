@@ -4,8 +4,6 @@ This repository is a toolbox to handle the MeteoNet dataset.
 
 *What is the MeteoNet Dataset ?*
 
-![my image](./MeteoNet.PNG#center)  
-
 <p align="center">
   <img src="./MeteoNet.PNG">
 </p>
