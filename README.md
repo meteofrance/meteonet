@@ -6,6 +6,10 @@ This repository is a toolbox to handle the MeteoNet dataset.
 
 ![my image](./MeteoNet.PNG#center)  
 
+<p align="center">
+  <img src="./MeteoNet.PNG">
+</p>
+
 It is about a reference reinforced dataset in Meteorology dedicated to Data Science subjects (Machine Learning, Deep Learning). The format is adapted for Data Scientists.
 
 Spatio-temporal framework : 
