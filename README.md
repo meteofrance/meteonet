@@ -1,30 +1,28 @@
-# Introduction
+# MeteoNet : Data exploration toolbox
 
-This repository is a toolbox to handle the MeteoNet dataset. 
+This repository is intended as a toolbox to handle the MeteoNet dataset. 
 
-*What is the MeteoNet Dataset ?*
+1. [What is the MeteoNet Dataset ?](#meteonet)
+2. [How to use this repository ?](#example2)
+3. [Requirements](#third-example)
+4. [Installation](#fourth-examplehttpwwwfourthexamplecom)
+5. [Troubleshooting](#ldkfm)
 
-<p align="center">
-  <img src="./MeteoNet.PNG">
-</p>
+# What is the MeteoNet Dataset ?<a name="meteonet"></a>
 
-It is about a reference reinforced dataset in Meteorology dedicated to Data Science subjects (Machine Learning, Deep Learning). The format is adapted for Data Scientists.
+![imageMeteoNet](MeteoNet2.png "Example of MeteoNet data")
 
-Spatio-temporal framework : 
-* 3 years : from 2016 to 2018
-* 2 geographic area :  north-western and south-eastern quarters of France
+MeteoNet is a dataset composed of meteorological data acquired by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
 
-Data types :
-* Ground station observations
-* Masks (land-sea and relief)
-* Radar observations
-* Satellite observations
-* Weather models forecasts 
+The data spans over 3 years, 2016 to 2018, and covers two geographical areas : the north-western and south-eastern quarters of France.
+
+The dataset regroups ground station observations, land-sea and relief masks, radar observations, satellite observations and weather models forecasts.
 
 
-This toolbox includes data samples and notebooks to explore and cross-check all data types (grid or punctual data).
 
-# Structure
+# Data Exploration
+
+This toolbox includes data samples from MeteoNet and notebooks to help you explore and cross-check all data types (grid or punctual data).
 
 This repository contains the following directories:
 * *data_sample*: samples of each data type (ground_stations, radar...)
