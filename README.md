@@ -2,13 +2,13 @@
 
 This repository is intended as a toolbox to handle the MeteoNet dataset. 
 
-1. [What is the MeteoNet Dataset ?](#meteonet)
-2. [How to use this repository ?](#example2)
-3. [Requirements](#third-example)
-4. [Installation](#fourth-examplehttpwwwfourthexamplecom)
-5. [Troubleshooting](#ldkfm)
+1. [What is MeteoNet ?](#meteonet)
+2. [How to use this repository ?](#description)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Troubleshooting](#troubleshooting)
 
-# What is the MeteoNet Dataset ?<a name="meteonet"></a>
+# What is MeteoNet ?<a name="meteonet"></a>
 
 ![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
 
@@ -19,31 +19,26 @@ The data spans over 3 years, 2016 to 2018, and covers two geographical areas : t
 The dataset regroups ground station observations, land-sea and relief masks, radar observations, satellite observations and weather models forecasts.
 
 
+# How to use this repository ?<a name="description"></a>
 
-# Data Exploration
+This toolbox includes **data samples** from MeteoNet, the **meteonet_toolbox package** with some usefull tools that we developped and **notebooks** to help you explore and cross-check all data types.
 
-This toolbox includes data samples from MeteoNet and notebooks to help you explore and cross-check all data types (grid or punctual data).
+The notebooks should help you open each data type (grid and point data, different resolutions...) and visualize it with map and relief overlays.
 
-This repository contains the following directories:
-* *data_sample*: samples of each data type (ground_stations, radar...)
-* *ground_stations*: notebooks to open ground_stations data
-* *masks*: notebooks to open masks data (land-sea and relief masks)
-* *radar*: notebooks to open radar data
-* *satellite*: notebooks to open satellite data
-* *superimpose_data*: notebooks with tools to superimpose all data types (grid and point data, different resolutions...)
-* *utils*: python scripts useful for user configuration, functions useful to get coordinates, legends for plots...
-* *weather_models*: notebooks to open weather models data
+The notebooks rely on the meteonet_toolbox package and we recommend that you install it.
 
-# Installation process
 
-## I - Install the dependencies
+# Requirements <a name="requirements"></a>
 
-2 installation ways are possible : either with Anaconda (the recommended way) or with pip.
+* Python 3
+* conda
+* pip
 
-### Recommended: install with Anaconda
-* install Anaconda with Python 3
+You can install the dependencies with Anaconda (recommended) or with pip.
 
-and then, type in a terminal **in this order** :
+## Installation with Anaconda (Recommended) 
+
+In a terminal run **in this order** :
 
 ```sh
 conda install -c conda-forge eccodes
@@ -51,35 +46,16 @@ conda install -c conda-forge cfgrib
 conda install -c anaconda xarray
 ```
 
-### Alternative way of installation: with pip
-* install Python 3
-* install pip
+## Installation with pip
 
-and then, type in a terminal (cf requirements.txt file in this repository):
+Naviguate to this repository and run :
 ```sh
 pip install -r requirements.txt 
 ```
 
-## II - Install the repository package
+## Install basemap (optional)
 
-Once the dependencies installed, you can install the package located in our repository. This package contains libraries that will help you manipulate our data.
-
-Go to the directory where you have cloned the repository, and enter:
-
-```sh
-pip install -e .
-```
-
-You will then be able to import the python files you need, for instance:
-
-```python
-import data_exploration.utils.coordinates_and_projection as cap
-```
-
-
-### Optional installation
-
-To plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (Basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
+If you want to plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
 
 ```sh
 conda install -c anaconda basemap
@@ -92,19 +68,35 @@ You might need to install *basemap-data-hires*:
 conda install basemap-data-hires
 ```
 
-### Troubleshooting: in case of librairies import issues
+# Installation <a name="installation"></a>
 
-You could have issues when you use the librairies xarray or basemap. 
-* issue with the xarray library -> PROBLEM OF TYPE "ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect"
+Once the dependencies are installed, you can install the meteonet_toolbox package.
 
-The solution is to indicate the path to the file 'boot.def'. 
+Naviguate to the directory where you have cloned the repository, and run :
 
-* problem with the basemap library -> PROBLEM OF TYPE "KeyError : 'PROJ_LIB'"
-
-The solution is to indicate the path to the file 'epsg'. 
-
-Examples of paths on Windows are indicated in the script utils/user_configuration.py.
+```sh
+pip install -e .
+```
 
 
+# Troubleshooting <a name="troubleshooting"></a>
 
+You could run into issues when trying to import the xarray or basemap librairies. 
+
+## xarray
+
+```sh
+ECCODES ERROR   :  Unable to find boot.def, the environment variable 
+ECCODES_DEFINITION_PATH is defined but incorrect
+```
+
+The solution is to indicate the path to the file 'boot.def'. See configuration in ```meteonet_toolbox/user_configuration.py```.
+
+## basemap
+
+```sh
+KeyError : 'PROJ_LIB'
+```
+
+The solution is to indicate the path to the file 'epsg'. See configuration in ```meteonet_toolbox/user_configuration.py```.
 
