@@ -36,7 +36,7 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 
 You can install the dependencies with Anaconda (recommended) or with pip.
 
-## Installation with Anaconda (Recommended) 
+## Install dependencies with Anaconda (Recommended) 
 
 In a terminal run **in this order** :
 
@@ -46,14 +46,14 @@ conda install -c conda-forge cfgrib
 conda install -c anaconda xarray
 ```
 
-## Installation with pip
+## Install dependencies with pip
 
 Naviguate to this repository and run :
 ```sh
 pip install -r requirements.txt 
 ```
 
-## Install basemap (optional)
+## Install basemap (Optional)
 
 If you want to plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
 
