@@ -18,6 +18,8 @@ The data spans over 3 years, 2016 to 2018, and covers two geographical areas : t
 
 The dataset regroups ground station observations, land-sea and relief masks, radar observations, satellite observations and weather models forecasts.
 
+For more information about MeteoNet, check out our [Wiki](http://gitlab.meteo.fr/deep_learning/data_exploration/wikis/Home).
+
 
 # How to use this repository ?<a name="description"></a>
 
