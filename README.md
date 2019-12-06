@@ -36,7 +36,7 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 * conda
 * pip
 
-# Installation process <a name="installation"></a>
+# Installation <a name="installation"></a>
 
 ## I - Install the dependencies
 
