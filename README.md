@@ -23,7 +23,7 @@ For more information about MeteoNet, check out our [Wiki](http://gitlab.meteo.fr
 
 # How to use this repository ?<a name="description"></a>
 
-This toolbox includes **data samples** from MeteoNet, the **meteonet_toolbox package** with some usefull tools that we developped and **notebooks** to help you explore and cross-check all data types.
+This toolbox includes **data samples** from MeteoNet, the **meteonet_toolbox package** with some useful tools and **notebooks** to help you explore and cross-check all data types.
 
 The notebooks should help you open each data type (grid and point data, different resolutions...) and visualize it with map and relief overlays.
 
