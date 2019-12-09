@@ -12,7 +12,7 @@ This repository is intended as a toolbox to handle the MeteoNet dataset.
 
 ![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
 
-MeteoNet is a dataset composed of meteorological data acquired by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
+MeteoNet is a meteorological dataset released by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
 
 The data spans over 3 years, 2016 to 2018, and covers two geographical areas : the north-western and south-eastern quarters of France.
 
