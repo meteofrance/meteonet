@@ -1,6 +1,6 @@
 import numpy as np 
 import xarray as xr
-from data_exploration.utils.constant import SAT_COORD
+from meteonet_toolbox.constant import SAT_COORD
 
 
 def get_satellite_as_xarray(fname,zone,channel_name="unknown"):
