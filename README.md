@@ -1,6 +1,6 @@
 # MeteoNet : Data exploration toolbox
 
-This repository is intended as a toolbox to handle the MeteoNet dataset. 
+This repository is intended as a toolbox to handle the MeteoNet dataset. It also serves as a communication interface with the users : you can post issues on this project via http://gitlab.meteo.fr/deep_learning/data_exploration/issues.
 
 1. [What is MeteoNet ?](#meteonet)
 2. [How to use this repository ?](#description)
