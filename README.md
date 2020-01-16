@@ -73,6 +73,7 @@ pip install -e .
 ## Install basemap (Optional)
 
 If you want to plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
+The basemap library is not managed anymore since 2020. You could have installation issues (cf Issues in this Gitlab project). It is planned to update the toolbox with a more recent library for basemaps.  
 
 ```sh
 conda install -c anaconda basemap
@@ -84,6 +85,7 @@ You might need to install *basemap-data-hires*:
 ```sh
 conda install basemap-data-hires
 ```
+
 
 # Troubleshooting <a name="troubleshooting"></a>
 
