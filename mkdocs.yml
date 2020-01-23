@@ -1,4 +1,4 @@
-site_name: MeteoNet Wiki
+site_name: MeteoNet's Wiki
 theme:
   name: 'material'
 repo_url: http://gitlab.meteo.fr/deep_learning/data_exploration
@@ -27,3 +27,18 @@ markdown_extensions:
   - pymdownx.tilde
   - admonition
   - attr_list
+
+nav:
+  - 'index.md'
+  - 'getting-started.md'
+  - MeteoNet's Toolbox:
+    - 'toolbox/presentation.md'
+    - 'toolbox/install.md'
+  - Data:
+    - 'data/ground-observations.md'
+    - 'data/rain-radar.md'
+    - 'data/weather-models.md'
+    - 'data/land-relief-masks.md'
+  - 'glossary.md'
+  - 'help.md'
+  - EXAMPLE : 'example-page.md'
