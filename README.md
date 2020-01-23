@@ -1,6 +1,6 @@
 # MeteoNet : Data exploration toolbox
 
-This repository is intended as a toolbox to handle the MeteoNet dataset. 
+This repository is intended as a toolbox to handle the MeteoNet dataset. It also serves as a communication interface with the users : you can post issues on this project via http://gitlab.meteo.fr/deep_learning/data_exploration/issues.
 
 1. [What is MeteoNet ?](#meteonet)
 2. [How to use this repository ?](#description)
@@ -12,7 +12,7 @@ This repository is intended as a toolbox to handle the MeteoNet dataset.
 
 ![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
 
-MeteoNet is a dataset composed of meteorological data acquired by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
+MeteoNet is a meteorological dataset released by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
 
 The data spans over 3 years, 2016 to 2018, and covers two geographical areas : the north-western and south-eastern quarters of France.
 
@@ -23,7 +23,7 @@ For more information about MeteoNet, check out our [Wiki](http://gitlab.meteo.fr
 
 # How to use this repository ?<a name="description"></a>
 
-This toolbox includes **data samples** from MeteoNet, the **meteonet_toolbox package** with some usefull tools that we developped and **notebooks** to help you explore and cross-check all data types.
+This toolbox includes **data samples** from MeteoNet, the **meteonet_toolbox package** with some useful tools and **notebooks** to help you explore and cross-check all data types.
 
 The notebooks should help you open each data type (grid and point data, different resolutions...) and visualize it with map and relief overlays.
 
@@ -36,9 +36,14 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 * conda
 * pip
 
+# Installation <a name="installation"></a>
+
+## I - Install the dependencies
+
 You can install the dependencies with Anaconda (recommended) or with pip.
 
 ## Install dependencies with Anaconda (Recommended) 
+
 
 In a terminal run **in this order** :
 
@@ -55,9 +60,20 @@ Naviguate to this repository and run :
 pip install -r requirements.txt 
 ```
 
+## II - Install the repository package
+
+Once the dependencies are installed, you can install the meteonet_toolbox package.
+
+Naviguate to the directory where you have cloned the repository, and run :
+
+```sh
+pip install -e .
+```
+
 ## Install basemap (Optional)
 
 If you want to plot nice maps, you will need the basemap library. The recommended installation method is using anaconda through the conda-forge channel (basemap is no longer uploaded to PyPI due to its size and non-python external dependencies).
+The basemap library is not managed anymore since 2020. You could have installation issues (cf Issues in this Gitlab project). It is planned to update the toolbox with a more recent library for basemaps.  
 
 ```sh
 conda install -c anaconda basemap
@@ -68,16 +84,6 @@ You might need to install *basemap-data-hires*:
 
 ```sh
 conda install basemap-data-hires
-```
-
-# Installation <a name="installation"></a>
-
-Once the dependencies are installed, you can install the meteonet_toolbox package.
-
-Naviguate to the directory where you have cloned the repository, and run :
-
-```sh
-pip install -e .
 ```
 
 

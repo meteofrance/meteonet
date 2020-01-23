@@ -1,6 +1,6 @@
 import getpass 
 import os 
-from data_exploration.utils.constant import *
+from meteonet_toolbox.constant import *
 import logging 
 
 log = logging.getLogger(__name__)
