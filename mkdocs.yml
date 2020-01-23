@@ -1,8 +1,8 @@
-site_name: metwork/mfext doc
+site_name: MeteoNet Wiki
 theme:
   name: 'material'
-repo_url: https://github.com/metwork-framework/mfext
-repo_name: 'GitHub'
+repo_url: http://gitlab.meteo.fr/deep_learning/data_exploration
+repo_name: 'GitLab'
 plugins:
   - search
   - mkdocs-add-number-plugin:
