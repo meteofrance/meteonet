@@ -1,0 +1,41 @@
+site_name: MeteoNet's Wiki
+theme:
+  name: 'material'
+repo_url: http://gitlab.meteo.fr/deep_learning/data_exploration
+repo_name: 'GitLab'
+plugins:
+  - search
+  - mkdocs-add-number-plugin:
+      strict_mode: False
+      order: 2
+  - awesome-pages
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - admonition
+  - attr_list
+
+nav:
+  - 'index.md'
+  - 'getting-started.md'
+  - 'install.md'
+  - Data:
+    - 'data/ground-observations.md'
+    - 'data/rain-radar.md'
+    - 'data/weather-models.md'
+    - 'data/land-relief-masks.md'
+  - 'glossary.md'
+  - 'help.md'

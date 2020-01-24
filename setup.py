@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="data_exploration",
+    name="meteonet_toolbox",
     version="0.0.1",
     author="LabIA-MF",
     author_email="gwennaelle.larvor@meteo.fr",
