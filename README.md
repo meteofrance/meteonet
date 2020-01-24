@@ -1,6 +1,6 @@
 # MeteoNet : Data exploration toolbox
 
-This repository is intended as a toolbox to handle the MeteoNet dataset. It also serves as a communication interface with the users : you can post issues on this project via http://gitlab.meteo.fr/deep_learning/data_exploration/issues. For more information (installation, more about the data, glossary...), let's go the [Documentation](http://gitlab.meteo.fr) !
+This repository is intended as a toolbox to handle the MeteoNet dataset. It also serves as a communication interface with the users : you can post [Issues](http://gitlab.meteo.fr/deep_learning/data_exploration/issues) on this project. For more information (installation, more about the data, glossary...), let's go the [Documentation](http://gitlab.meteo.fr) !
 
 1. [What is MeteoNet ?](#meteonet)
 2. [How to use this repository ?](#description)
@@ -9,8 +9,7 @@ This repository is intended as a toolbox to handle the MeteoNet dataset. It also
 5. [Troubleshooting](#troubleshooting)
 
 # What is MeteoNet ?<a name="meteonet"></a>
-
-![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
+  ![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
 
 MeteoNet is a meteorological dataset released by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
 
