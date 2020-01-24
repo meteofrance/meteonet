@@ -13,7 +13,7 @@ Hundreds of observation stations are built throughout the French territory, each
 | lat | latitude | decimal degrees (10<sup>-1</sup> °)|
 | lon | longitude | decimal degrees (10<sup>-1</sup> °)|
 | height_sta | station height | meters (m) |
-| date |  a datetime object | format 'YYYY-MM-DD HH:mm:ss' |
+| date |  a datetime object | format 'YYYY-MM-DD HH: mm :ss' |
 
 ### Meteorological parameters
 
@@ -23,6 +23,6 @@ Hundreds of observation stations are built throughout the French territory, each
 | ff | Wind speed |  m.s<sup>-1</sup>|
 | precip | Precipitation during the reporting period | kg.m<sup>2</sup>|
 | hu | Humidity | percentage (%) |
-| td |  [Dew point](Documentation/Glossary/#dewpoint) | Kelvin (K) |
+| td |  [Dew point](../glossary.md) | Kelvin (K) |
 | t |  Temperature | Kelvin (K) |
 | psl |  Pressure reduced to sea level | Pascal (Pa) |

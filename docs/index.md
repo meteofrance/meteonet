@@ -28,6 +28,7 @@ As we are always willing to improve our knowledge of meteorology and weather for
 
 ## About Us
 
-<div style="text-align:center"><img src="img/LogoMeteoFrance.jpeg" /></div>
+
+<div style="text-align:center"><a href="http://www.meteofrance.com" style="text-align:center"><img src="img/LogoMeteoFrance.jpeg" ></a></div>
 
 METEO FRANCE is the French national meteorological service. Its first mission is to ensure the meteorological safety of people and goods accross the French territory. Its second goal is to archive the memory of the climate and make projection about about the climate evolution.

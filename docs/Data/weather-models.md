@@ -27,7 +27,9 @@ All these characteristics are the result of compromises between the need for pre
 In pratice, ARPEGE is used to forecast the weather on Europe and AROME is used to forecast the weather on France. 
 
 In the dataset, we provided the results of **2D models** (forecasts are on a grid longitude x latitude) and **3D models** (forecasts are on a grid longitude x latitude x height).
-## 2D Models
+
+
+## 2D Parameters
 
 
 Two 2D weather models are available in the dataset :
@@ -54,7 +56,7 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
     When you open a GRIB file with the xarray library, a new associated ```.idx``` file is created. 
 
 
-## 3D Models
+## 3D Parameters
 
 
 One 3D weather model is avaible : the large-mesh French weather model named '**ARPEGE**'.
