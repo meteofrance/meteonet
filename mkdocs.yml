@@ -31,9 +31,7 @@ markdown_extensions:
 nav:
   - 'index.md'
   - 'getting-started.md'
-  - MeteoNet's Toolbox:
-    - 'toolbox/presentation.md'
-    - 'toolbox/install.md'
+  - 'install.md'
   - Data:
     - 'data/ground-observations.md'
     - 'data/rain-radar.md'
@@ -41,4 +39,3 @@ nav:
     - 'data/land-relief-masks.md'
   - 'glossary.md'
   - 'help.md'
-  - EXAMPLE : 'example-page.md'

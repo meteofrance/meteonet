@@ -1,3 +1,3 @@
 # Rain Radar
 
-![Masks](../img/rainfall.png)
+![Masks](../img/Rain-Radar.png)
