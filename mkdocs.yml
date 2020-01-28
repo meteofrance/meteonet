@@ -1,4 +1,4 @@
-site_name: MeteoNet's Wiki
+site_name: MeteoNet's Documentation
 theme:
   name: 'material'
 repo_url: http://gitlab.meteo.fr/deep_learning/data_exploration
