@@ -2,9 +2,9 @@
 
 ## MeteoNet toolbox
 
-You are new to MeteoNet ? Start by visiting our [GitHub Repository](link) and download our Toolbox !
+You are new to MeteoNet ? Start by looking at our sample notebooks on the [GitHub Repository](link)!
 
-In order to help you, we have developped a toolbox including **data samples** from MeteoNet, the **meteonet_toolbox python package** with some useful tools and **notebooks** to help you explore and cross-check all data types.
+On this repository, you will find a toolbox including **data samples** from MeteoNet, the **meteonet_toolbox python package** with some useful tools and **notebooks** to help you explore and cross-check all data types.
 
 The notebooks should help you open each data type (grid and point data, different resolutions...) and visualize them with maps and relief overlays. 
 

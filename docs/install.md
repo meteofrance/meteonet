@@ -38,6 +38,11 @@ pip install -e .
 
 ## (Optional) Install basemap 
 
+!!! warning
+    As **the basemap library is not maintained anymore** since 2020, you could have installation issues. 
+    
+    We plan to update the toolbox with a more recent mapping library such as Mapbox or Cartopy. If you have tried these libraries, or another one, don't hesitate to make a pull request !
+
 If you want to plot nice maps with your data, you can use the basemap library. The recommended installation method uses anaconda through the conda-forge channel  as basemap is no longer uploaded to PyPI due to its size and non-python external dependencies :
 
 ```sh
@@ -49,15 +54,6 @@ For some distributions, this installation of basemap is not sufficient. You migh
 ```sh
 conda install basemap-data-hires
 ```
-
-!!! warning
-    As **the basemap library is not maintained anymore** since 2020, you could have installation issues. 
-    
-    We plan to update the toolbox with a more recent mapping library such as Mapbox or Cartopy. If you have tried these libraries, or another one, don't hesitate to make a pull request !
-
-
-
-
 
 
 ## Troubleshooting

@@ -1,6 +1,6 @@
 # Want to help us ?
 
-We want to build the best dataset possible, a dataset that corresponds to your needs ! If you feel that the dataset is missing something, please publish an issue on our [GitHub repository](somelink). If you want to improve our notebooks or our documentation, please feel free to make a pull request.
+We want to build the best possible dataset! If you feel that the dataset is missing something, please publish an issue on our [GitHub repository](somelink). If you want to improve our notebooks or our documentation, please feel free to make a pull request.
 
 ## Editing the documentation
 

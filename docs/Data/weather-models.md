@@ -44,8 +44,8 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
 
 | File Name | Vertical Level | Forecasted Parameters |
 | ------ | ------ | ------ |
-| 2m | 2 meters | Temperature (K), [Dew point](Documentation/Glossary/#dewpoint) (K), Telative humidity (%) |
-| 10m | 10 meters | Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](Documentation/Glossary/#windcomponents) (m.s<sup>-1</sup>) |
+| 2m | 2 meters | Temperature (K), [Dew point](../glossary.md) (K), Telative humidity (%) |
+| 10m | 10 meters | Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../glossary.md) (m.s<sup>-1</sup>) |
 | P_sea_level | sea level | Mean sea level pressure (Pa) |
 | PRECIP | ground level | Total precipitation (kg.m<sup>-2</sup>) |
 
@@ -68,4 +68,4 @@ The 3D data is stored in 2 different GRIB files, depending on the vertical level
 | File Name | Vertical Levels | Forecasted Parameters |
 | ------ | ------ | ------ |
 | height | 20, 100, 500, 875, 1375, 2000 and 3000 m | Pressure (Pa) |
-| isobar | 1000, 950, 925, 850, 700, 600 and 500 hPa | Temperature (K), [Pseudo-adiabatic potential temperature](Documentation/Glossary/#papt) (K), Relative humidity (%), Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](Documentation/Glossary/#windcomponents) (m.s<sup>-1</sup>), [vertical velocity](Documentation/Glossary/#verticalvelocity) (Pa.s<sup>-1</sup>), [geopotential](Documentation/Glossary/#geopotential) (m<sup>2</sup>.s<sup>-2</sup>) |
+| isobar | 1000, 950, 925, 850, 700, 600 and 500 hPa | Temperature (K), [Pseudo-adiabatic potential temperature](../glossary.md) (K), Relative humidity (%), Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../glossary.md) (m.s<sup>-1</sup>), [vertical velocity](../glossary.md) (Pa.s<sup>-1</sup>), [geopotential](../glossary.md) (m<sup>2</sup>.s<sup>-2</sup>) |

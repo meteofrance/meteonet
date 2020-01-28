@@ -1,4 +1,4 @@
-# Ground Observation
+# Ground Observations
 
 ![Masks](../img/GroundStationsObservations.png)
 
