@@ -1,10 +1,11 @@
 # MeteoNet : Data exploration toolbox
 
-This repository is intended as a toolbox to handle the MeteoNet dataset. It's also a communication interface with MeteoNet's users : if  you have a request or a problem concerning MeteoNet, you can post an  issue [here](http://gitlab.meteo.fr/deep_learning/data_exploration/issues) on this project. For more information (installation, data types, glossary...), check out our [documentation](http://gitlab.meteo.fr) !
+This repository is intended as a toolbox to handle the MeteoNet dataset. It's also a communication interface with MeteoNet's users : if  you have a request or a problem concerning MeteoNet, you can post an  [issue](https://github.com/meteofrance/meteonet/issues) on this project. For more information (installation, data types, glossary...), check out our [documentation](https://github.com/meteofrance/meteonet/tree/master/docs) !
 
 1. [What is MeteoNet ?](#meteonet)
 2. [How to use this repository ?](#description)
 3. [Installation](#installation)
+4. [Licence](#licence)
 
 # What is MeteoNet ?<a name="meteonet"></a>
   ![imageMeteoNet](MeteoNet.PNG "Example of MeteoNet data")
@@ -26,4 +27,11 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 
 # Installing the toolbox<a name="installation"></a>
 
-All the install instructions for our toolbox are available [here](http://gitlab.meteo.fr/deep_learning/data_exploration/issues) in our documentation.
+All the install instructions for our toolbox are available [here](https://github.com/meteofrance/meteonet/blob/master/docs/install.md) in our documentation.
+
+# Licence <a name="licence"></a>
+
+The Dataset is licenced by Meteo-France under [Etalab Open Licence 2.0](https://github.com/meteofrance/meteonet/blob/master/LICENCE.md).
+
+When using this dataset, please cite:
+<br/>Gwennaëlle Larvor, Léa Berthomier, Vincent Chabot, Brice Le Pape, Bruno Pradel, Lior Perez. **MeteoNet, an open reference weather dataset by Meteo-France**, 2020
