@@ -35,9 +35,9 @@ nav:
   - 'getting-started.md'
   - 'install.md'
   - Data:
-    - 'Data/ground-observations.md'
-    - 'Data/rain-radar.md'
-    - 'Data/weather-models.md'
-    - 'Data/land-relief-masks.md'
+    - 'data/ground-observations.md'
+    - 'data/rain-radar.md'
+    - 'data/weather-models.md'
+    - 'data/land-relief-masks.md'
   - 'glossary.md'
   - 'help.md'
