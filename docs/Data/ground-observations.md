@@ -23,6 +23,6 @@ Hundreds of observation stations are built throughout the French territory, each
 | ff | Wind speed |  m.s<sup>-1</sup>|
 | precip | Precipitation during the reporting period | kg.m<sup>2</sup>|
 | hu | Humidity | percentage (%) |
-| td |  [Dew point](../glossary.md) | Kelvin (K) |
+| td |  [Dew point](../../glossary/#dew-point) | Kelvin (K) |
 | t |  Temperature | Kelvin (K) |
 | psl |  Pressure reduced to sea level | Pascal (Pa) |

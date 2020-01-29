@@ -8,10 +8,10 @@ The following packages are required to use our toolbox : **Python 3** and **cond
 
 ## Dowload the repository
 
-Copy the repository from our [GitHub page](link) or run :
+Copy the repository from our [GitHub page](https://github.com/meteofrance/meteonet) or run :
 
 ```sh
-git clone LINK HERE
+git clone https://github.com/meteofrance/meteonet.git
 ```
 
 ## Install dependencies

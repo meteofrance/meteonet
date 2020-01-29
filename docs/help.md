@@ -1,10 +1,10 @@
 # Want to help us ?
 
-We want to build the best possible dataset! If you feel that the dataset is missing something, please publish an issue on our [GitHub repository](somelink). If you want to improve our notebooks or our documentation, please feel free to make a pull request.
+We want to build the best possible dataset! If you feel that the dataset is missing something, please publish an issue on our [GitHub repository](https://github.com/meteofrance/meteonet). If you want to improve our notebooks or our documentation, please feel free to make a pull request.
 
 ## Editing the documentation
 
-This documentation is built with **mkdocs** and configured in our [git repository](http://gitlab.meteo.fr/deep_learning/data_exploration). 
+This documentation is built with **mkdocs** and configured in our [git repository](https://github.com/meteofrance/meteonet). 
 
 For more information about **mkdocs**, visit [mkdocs.org](https://www.mkdocs.org/).
 

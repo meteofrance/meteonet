@@ -1,8 +1,10 @@
 site_name: MeteoNet's Documentation
 theme:
   name: 'material'
-repo_url: http://gitlab.meteo.fr/deep_learning/data_exploration
-repo_name: 'GitLab'
+  logo:
+    icon: 'cloud'
+repo_url: https://github.com/meteofrance/meteonet
+repo_name: 'GitHub'
 plugins:
   - search
   - mkdocs-add-number-plugin:
@@ -33,9 +35,9 @@ nav:
   - 'getting-started.md'
   - 'install.md'
   - Data:
-    - 'data/ground-observations.md'
-    - 'data/rain-radar.md'
-    - 'data/weather-models.md'
-    - 'data/land-relief-masks.md'
+    - 'Data/ground-observations.md'
+    - 'Data/rain-radar.md'
+    - 'Data/weather-models.md'
+    - 'Data/land-relief-masks.md'
   - 'glossary.md'
   - 'help.md'
