@@ -5,6 +5,10 @@ theme:
     icon: 'cloud'
 repo_url: https://github.com/meteofrance/meteonet
 repo_name: 'GitHub'
+
+docs_dir: 'docs_src'
+site_dir: 'docs'
+
 plugins:
   - search
   - mkdocs-add-number-plugin:
