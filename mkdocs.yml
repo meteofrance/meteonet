@@ -39,6 +39,7 @@ nav:
   - 'getting-started.md'
   - 'install.md'
   - Data:
+    - 'data/summary.md'
     - 'data/ground-observations.md'
     - 'data/rain-radar.md'
     - 'data/weather-models.md'
