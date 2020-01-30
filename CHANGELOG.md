@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 
 ## 1.0.0 - 2020-30-01
 
-- Push online the toolbox to handle the MeteoNet dataset and data samples
+- Push online data samples of the MeteoNet dataset and the toolbox to handle it
 - Data types : ground observations, land & relief masks, radar reflectivity & rainfall, weather models forecasts 
 
 ## Example
