@@ -271,6 +271,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../summary/" title="Dataset Summary" class="md-nav__link">
+      Dataset Summary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../ground-observations/" title="Ground Observations" class="md-nav__link">
       Ground Observations
     </a>
@@ -291,9 +303,59 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Rain Radar
+      </label>
+    
     <a href="./" title="Rain Radar" class="md-nav__link md-nav__link--active">
       Rain Radar
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rain-radar" class="md-nav__link">
+    1. Rain Radar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rain-radar-quality-code" class="md-nav__link">
+    2. Rain Radar Quality Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-reflectivity-old-product" class="md-nav__link">
+    3. Reflectivity - Old Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reflectivity-new-product" class="md-nav__link">
+    4. Reflectivity - New Product
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -368,6 +430,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rain-radar" class="md-nav__link">
+    1. Rain Radar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rain-radar-quality-code" class="md-nav__link">
+    2. Rain Radar Quality Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-reflectivity-old-product" class="md-nav__link">
+    3. Reflectivity - Old Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reflectivity-new-product" class="md-nav__link">
+    4. Reflectivity - New Product
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -383,7 +482,45 @@
                 
                 <h1 id="rain-radar">Rain Radar</h1>
 <p><img alt="Masks" src="../../img/Rain-Radar.png" /></p>
+<h2 id="1-rain-radar">1. Rain Radar</h2>
+<p>You will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). </p>
+<p>Each <code>.npz</code> file contains 3 arrays :</p>
+<ul>
+<li>
+<p><code>data</code> : an array containing a rainfall map for each time step. For each pixel, the value represents the cumulated rainfall in hundreth of millimeters (10^(-2) mm). If the value is missing then the value is -1.</p>
+</li>
+<li>
+<p><code>dates</code> : an array containing a datetime object for each <code>data</code> rainfall map.</p>
+</li>
+<li>
+<p><code>miss_dates</code> : an array containing a datetime object for each missing rainfall map over the period.</p>
+</li>
+</ul>
+<p>The time step between two radar scans is 5 min. The radar starts scanning at 00h every day and ends at 23h55. So each file of 11 days should contain a maximum of 3168 rainfall maps (minus the missing dates).</p>
+<p>The radar's spatial resolution is 0.01° and the projection system used is EPSG:4326.</p>
+<p><img alt="Masks" src="../../img/Rain-Radar-4.png" /></p>
+<h2 id="2-rain-radar-quality-code">2. Rain Radar Quality Code</h2>
+<p>For each pixel of the rainfall product is associated a quality code with values ranging between 0 (very bad) and 100 (perfect), the values are in percents. If the value is missing, then the value is 255.</p>
+<p>The Rain Radar Quality Code data is organized like the Rain Radar data: you will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). The original data was to heavy to be manipulated so the qulity code data are divided into 2 files :</p>
+<ul>
+<li>
+<p><code>rainfall_mean_quality_DATE.npz</code> contains the quality code's average over a day and for each pixel.</p>
+</li>
+<li>
+<p><code>rainfall_diff_quality_DATE.npz</code> contains the difference between the original value and the average over the day for each pixel.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Remark about the average quality code computation</strong> : if there is no value for a whole day on 1 pixel, it will be indicated as a missing value in the <code>mean</code> file, else the mean computation is done over the non missing values for 1 day and 1 pixel.</p>
+</div>
+<p><img alt="Masks" src="../../img/Rain-Radar-Quality-Code.png" /></p>
+<h2 id="3-reflectivity-old-product">3. Reflectivity - Old Product</h2>
 <p>Official documentation coming soon! Documentation available in the sample notebooks on GitHub for now...</p>
+<p><img alt="Masks" src="../../img/Rain-Radar-Reflectivity-Old.png" /></p>
+<h2 id="4-reflectivity-new-product">4. Reflectivity - New Product</h2>
+<p>Official documentation coming soon! Documentation available in the sample notebooks on GitHub for now...</p>
+<p><img alt="Masks" src="../../img/Rain-Radar-Reflectivity-New.png" /></p>
                 
                   
                 
