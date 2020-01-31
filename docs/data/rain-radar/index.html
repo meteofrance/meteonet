@@ -322,30 +322,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-rain-radar" class="md-nav__link">
-    1. Rain Radar
+  <a href="#1-radar-data" class="md-nav__link">
+    1. Radar Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-rain-radar-quality-code" class="md-nav__link">
-    2. Rain Radar Quality Code
+  <a href="#2-cumulated-rainfall" class="md-nav__link">
+    2. Cumulated Rainfall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-reflectivity-old-product" class="md-nav__link">
-    3. Reflectivity - Old Product
+  <a href="#3-rain-radar-quality-code" class="md-nav__link">
+    3. Rain Radar Quality Code
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-reflectivity-new-product" class="md-nav__link">
-    4. Reflectivity - New Product
+  <a href="#4-reflectivity" class="md-nav__link">
+    4. Reflectivity
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-old-product" class="md-nav__link">
+    4.1 Old Product
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-new-product" class="md-nav__link">
+    4.2 New Product
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -434,30 +454,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-rain-radar" class="md-nav__link">
-    1. Rain Radar
+  <a href="#1-radar-data" class="md-nav__link">
+    1. Radar Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-rain-radar-quality-code" class="md-nav__link">
-    2. Rain Radar Quality Code
+  <a href="#2-cumulated-rainfall" class="md-nav__link">
+    2. Cumulated Rainfall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-reflectivity-old-product" class="md-nav__link">
-    3. Reflectivity - Old Product
+  <a href="#3-rain-radar-quality-code" class="md-nav__link">
+    3. Rain Radar Quality Code
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-reflectivity-new-product" class="md-nav__link">
-    4. Reflectivity - New Product
+  <a href="#4-reflectivity" class="md-nav__link">
+    4. Reflectivity
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-old-product" class="md-nav__link">
+    4.1 Old Product
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-new-product" class="md-nav__link">
+    4.2 New Product
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -482,26 +522,31 @@
                 
                 <h1 id="rain-radar">Rain Radar</h1>
 <p><img alt="Masks" src="../../img/Rain-Radar.png" /></p>
-<h2 id="1-rain-radar">1. Rain Radar</h2>
-<p>You will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). </p>
+<p><a name="radar-data"></a></p>
+<h2 id="1-radar-data">1. Radar Data</h2>
+<p>For each radar data type, you will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). </p>
 <p>Each <code>.npz</code> file contains 3 arrays :</p>
 <ul>
 <li>
-<p><code>data</code> : an array containing a rainfall map for each time step. For each pixel, the value represents the cumulated rainfall in hundreth of millimeters (10^(-2) mm). If the value is missing then the value is -1.</p>
+<p><code>data</code> : an array containing maps of radar data values.</p>
 </li>
 <li>
-<p><code>dates</code> : an array containing a datetime object for each <code>data</code> rainfall map.</p>
+<p><code>dates</code> : an array containing a datetime object and indicating the date of each <code>data</code> map.</p>
 </li>
 <li>
-<p><code>miss_dates</code> : an array containing a datetime object for each missing rainfall map over the period.</p>
+<p><code>miss_dates</code> : an array containing a datetime object for each missing radar map over the period.</p>
 </li>
 </ul>
 <p>The time step between two radar scans is 5 min. The radar starts scanning at 00h every day and ends at 23h55. So each file of 11 days should contain a maximum of 3168 rainfall maps (minus the missing dates).</p>
 <p>The radar's spatial resolution is 0.01° and the projection system used is EPSG:4326.</p>
+<p>You will also find a <code>radar_coords_ZONE.npz</code> file containing 2 arrays <code>lats</code> and <code>lons</code>, indicating the coordinates (latitude and longitude) of each radar pixel.</p>
+<h2 id="2-cumulated-rainfall">2. Cumulated Rainfall</h2>
+<p>The rainfall data is organized as specified <a href="#radar-data">here</a>.</p>
+<p>The <code>data</code> array contains a rainfall map for each time step. For each pixel, the value represents the cumulated rainfall in hundreth of millimeters (<script type="math/tex">10^{-2} mm</script>). If the value is missing then the value is -1.</p>
 <p><img alt="Masks" src="../../img/Rain-Radar-4.png" /></p>
-<h2 id="2-rain-radar-quality-code">2. Rain Radar Quality Code</h2>
+<h2 id="3-rain-radar-quality-code">3. Rain Radar Quality Code</h2>
 <p>For each pixel of the rainfall product is associated a quality code with values ranging between 0 (very bad) and 100 (perfect), the values are in percents. If the value is missing, then the value is 255.</p>
-<p>The Rain Radar Quality Code data is organized like the Rain Radar data: you will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). The original data was to heavy to be manipulated so the qulity code data are divided into 2 files :</p>
+<p>The rain radar quality code data is organized as specified <a href="#radar-data">here</a>. The original data was to heavy to be manipulated so the qulity code data are divided into 2 files :</p>
 <ul>
 <li>
 <p><code>rainfall_mean_quality_DATE.npz</code> contains the quality code's average over a day and for each pixel.</p>
@@ -515,11 +560,105 @@
 <p><strong>Remark about the average quality code computation</strong> : if there is no value for a whole day on 1 pixel, it will be indicated as a missing value in the <code>mean</code> file, else the mean computation is done over the non missing values for 1 day and 1 pixel.</p>
 </div>
 <p><img alt="Masks" src="../../img/Rain-Radar-Quality-Code.png" /></p>
-<h2 id="3-reflectivity-old-product">3. Reflectivity - Old Product</h2>
-<p>Official documentation coming soon! Documentation available in the sample notebooks on GitHub for now...</p>
+<h2 id="4-reflectivity">4. Reflectivity</h2>
+<p>The reflectivity is an approximation of the rainfall rate on a zone, measured by a network of radars. Each radar emits a signal which is partly reflected by the precipitation and returned to the radar's receiver. The returned signal's power is then compared to a reference power density at a distance of 1 meter from the radar's antenna before computing the reflectivity.</p>
+<p>The reflectivity factor <strong>Z</strong> is measured in decibels (dBZ), which can be approximated to a rainfall rate <strong>R</strong>, expressed in millimeter per hour (mm/h), using the Marshall-Palmer relation:
+<script type="math/tex; mode=display"> Z = 200.R^{1.6} \iff  R = (\frac{Z}{200})^\frac{1}{1.6}</script>
+</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <code>200</code> and <code>1.6</code> coefficients depend on the type of rain and are specific to mainland France.</p>
+</div>
+<p>In 2018, METEO FRANCE introduced a new reflectivity product, with additional data (rainfall probability, height measures,...), which definitively replaced the old product in November 2018. Consequently, during the first part of 2018, the two products overlap and both data are available in the dataset.</p>
+<h3 id="41-old-product">4.1 Old Product</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The old product data range from 01/01/2016 to 30/10/18 included. </p>
+</div>
+<p>The rain radar data is organized as specified <a href="#radar-data">here</a>.</p>
+<p>Each pixel of the <code>data</code> array contains a reflectivity value expressed in dBZ, computed using the lower bound of reflecivity levels as follows :</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Reflectivity Range</th>
+<th>Data value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>
+<script type="math/tex">Z < 8</script> dBZ</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<script type="math/tex">8 < Z < 16</script> dBZ</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<script type="math/tex">16 < Z < 20</script> dBZ</td>
+<td>16</td>
+</tr>
+<tr>
+<td>N</td>
+<td>
+<script type="math/tex">17 + N < Z < 18 + N</script> dBZ</td>
+<td>
+<script type="math/tex">17 + N</script>
+</td>
+</tr>
+<tr>
+<td>53</td>
+<td>
+<script type="math/tex">70 \leq Z</script> dBZ</td>
+<td>70</td>
+</tr>
+<tr>
+<td>255</td>
+<td>No value or missing data</td>
+<td>255</td>
+</tr>
+</tbody>
+</table>
 <p><img alt="Masks" src="../../img/Rain-Radar-Reflectivity-Old.png" /></p>
-<h2 id="4-reflectivity-new-product">4. Reflectivity - New Product</h2>
-<p>Official documentation coming soon! Documentation available in the sample notebooks on GitHub for now...</p>
+<h3 id="42-new-product">4.2 New Product</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The new product data range from 01/02/2018 to 31/12/18 included. </p>
+</div>
+<p>The new radar product introduced the following changes :</p>
+<ul>
+<li>
+<p>a new data processing algorithm </p>
+</li>
+<li>
+<p>the reflectivity minimum detection threshold reduced from 8 to -9 dBZ</p>
+</li>
+<li>
+<p>the reflectivity values with a step of 0.5 dBZ</p>
+</li>
+<li>
+<p>2 additionnal products : rain probability and selected measure height</p>
+</li>
+</ul>
+<p>The rain radar data is organized as specified <a href="#radar-data">here</a>, with 2 additionnals arrays <code>prob</code> and <code>height</code>, and contains the following data :</p>
+<ul>
+<li>
+<p><code>data</code> : reflectivity values (in 1/10 dBZ)</p>
+</li>
+<li>
+<p><code>prob</code> : rain probability (in %)</p>
+</li>
+<li>
+<p><code>height</code> : selected measure height (in m)</p>
+</li>
+</ul>
+<p>The '<em>non detection data</em>' value is -100 and the '<em>missing data</em>' value is -200.</p>
 <p><img alt="Masks" src="../../img/Rain-Radar-Reflectivity-New.png" /></p>
                 
                   
@@ -594,6 +733,8 @@
       <script src="../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
   </body>
