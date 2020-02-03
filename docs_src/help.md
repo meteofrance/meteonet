@@ -8,7 +8,7 @@ This documentation is built with **mkdocs** and configured in our [git repositor
 
 For more information about **mkdocs**, visit [mkdocs.org](https://www.mkdocs.org/).
 
-If you want to edit the documentation, you can directly modify the markdown files in the ```docs``` folder.
+If you want to edit the documentation, you can directly modify the markdown files in the ```docs_src``` folder.
 
 ### Previewing the docs
 
@@ -27,3 +27,5 @@ The preview is now available at [```http://127.0.0.1:8000```](http://127.0.0.1:8
 ### Building the docs
 
 ```mkdocs build```
+
+Then, you can commit and push to the GitHub repository. 
