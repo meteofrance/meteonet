@@ -35,7 +35,7 @@ The `data` array contains a rainfall map for each time step. For each pixel, the
 
 For each pixel of the rainfall product is associated a quality code with values ranging between 0 (very bad) and 100 (perfect), the values are in percents. If the value is missing, then the value is 255.
 
-The rain radar quality code data is organized as specified [here](#radar-data). The original data was to heavy to be manipulated so the qulity code data are divided into 2 files :
+The rain radar quality code data is organized as specified [here](#radar-data). The original data was to heavy to be manipulated so the quality code data are divided into 2 files :
 
 * `rainfall_mean_quality_DATE.npz` contains the quality code's average over a day and for each pixel.
   
@@ -50,7 +50,7 @@ The rain radar quality code data is organized as specified [here](#radar-data). 
 
 ## Reflectivity
 
-The reflectivity is an approximation of the rainfall rate on a zone, measured by a network of radars. Each radar emits a signal which is partly reflected by the precipitation and returned to the radar's receiver. The returned signal's power is then compared to a reference power density at a distance of 1 meter from the radar's antenna before computing the reflectivity.
+The reflectivity is a measure of the efficiency of a radar target in intercepting and returning radio energy. Each radar emits a signal which is partly reflected by the precipitation and returned to the radar's receiver. The returned signal's power is then compared to a reference power density at a distance of 1 meter from the radar's antenna before computing the reflectivity.
 
 The reflectivity factor **Z** is measured in decibels (dBZ), which can be approximated to a rainfall rate **R**, expressed in millimeter per hour (mm/h), using the Marshall-Palmer relation:
 $$ Z = 200.R^{1.6} \iff  R = (\frac{Z}{200})^\frac{1}{1.6}$$
@@ -65,7 +65,7 @@ In 2018, METEO FRANCE introduced a new reflectivity product, with additional dat
 !!! warning
     The old product data range from 01/01/2016 to 30/10/18 included. 
 
-The rain radar data is organized as specified [here](#radar-data).
+The rain radar data are organized as specified [here](#radar-data).
 
 Each pixel of the `data` array contains a reflectivity value expressed in dBZ, computed using the lower bound of reflecivity levels as follows :
 
@@ -87,7 +87,7 @@ Each pixel of the `data` array contains a reflectivity value expressed in dBZ, c
 !!! warning
     The new product data range from 01/02/2018 to 31/12/18 included. 
  
-The new radar product introduced the following changes :
+The new reflectivity product introduced the following changes :
 
 * a new data processing algorithm 
   
@@ -97,7 +97,7 @@ The new radar product introduced the following changes :
 
 * 2 additionnal products : rain probability and selected measure height
 
-The rain radar data is organized as specified [here](#radar-data), with 2 additionnals arrays `prob` and `height`, and contains the following data :
+The rain radar data are organized as specified [here](#radar-data), with 2 additionnals arrays `prob` and `height`, and contains the following data :
 
 * `data` : reflectivity values (in 1/10 dBZ)
 

@@ -546,7 +546,7 @@
 <p><img alt="Masks" src="../../img/Rain-Radar-4.png" /></p>
 <h2 id="3-rain-radar-quality-code">3. Rain Radar Quality Code</h2>
 <p>For each pixel of the rainfall product is associated a quality code with values ranging between 0 (very bad) and 100 (perfect), the values are in percents. If the value is missing, then the value is 255.</p>
-<p>The rain radar quality code data is organized as specified <a href="#radar-data">here</a>. The original data was to heavy to be manipulated so the qulity code data are divided into 2 files :</p>
+<p>The rain radar quality code data is organized as specified <a href="#radar-data">here</a>. The original data was to heavy to be manipulated so the quality code data are divided into 2 files :</p>
 <ul>
 <li>
 <p><code>rainfall_mean_quality_DATE.npz</code> contains the quality code's average over a day and for each pixel.</p>
@@ -561,7 +561,7 @@
 </div>
 <p><img alt="Masks" src="../../img/Rain-Radar-Quality-Code.png" /></p>
 <h2 id="4-reflectivity">4. Reflectivity</h2>
-<p>The reflectivity is an approximation of the rainfall rate on a zone, measured by a network of radars. Each radar emits a signal which is partly reflected by the precipitation and returned to the radar's receiver. The returned signal's power is then compared to a reference power density at a distance of 1 meter from the radar's antenna before computing the reflectivity.</p>
+<p>The reflectivity is a measure of the efficiency of a radar target in intercepting and returning radio energy. Each radar emits a signal which is partly reflected by the precipitation and returned to the radar's receiver. The returned signal's power is then compared to a reference power density at a distance of 1 meter from the radar's antenna before computing the reflectivity.</p>
 <p>The reflectivity factor <strong>Z</strong> is measured in decibels (dBZ), which can be approximated to a rainfall rate <strong>R</strong>, expressed in millimeter per hour (mm/h), using the Marshall-Palmer relation:
 <script type="math/tex; mode=display"> Z = 200.R^{1.6} \iff  R = (\frac{Z}{200})^\frac{1}{1.6}</script>
 </p>
@@ -575,7 +575,7 @@
 <p class="admonition-title">Warning</p>
 <p>The old product data range from 01/01/2016 to 30/10/18 included. </p>
 </div>
-<p>The rain radar data is organized as specified <a href="#radar-data">here</a>.</p>
+<p>The rain radar data are organized as specified <a href="#radar-data">here</a>.</p>
 <p>Each pixel of the <code>data</code> array contains a reflectivity value expressed in dBZ, computed using the lower bound of reflecivity levels as follows :</p>
 <table>
 <thead>
@@ -631,7 +631,7 @@
 <p class="admonition-title">Warning</p>
 <p>The new product data range from 01/02/2018 to 31/12/18 included. </p>
 </div>
-<p>The new radar product introduced the following changes :</p>
+<p>The new reflectivity product introduced the following changes :</p>
 <ul>
 <li>
 <p>a new data processing algorithm </p>
@@ -646,7 +646,7 @@
 <p>2 additionnal products : rain probability and selected measure height</p>
 </li>
 </ul>
-<p>The rain radar data is organized as specified <a href="#radar-data">here</a>, with 2 additionnals arrays <code>prob</code> and <code>height</code>, and contains the following data :</p>
+<p>The rain radar data are organized as specified <a href="#radar-data">here</a>, with 2 additionnals arrays <code>prob</code> and <code>height</code>, and contains the following data :</p>
 <ul>
 <li>
 <p><code>data</code> : reflectivity values (in 1/10 dBZ)</p>
