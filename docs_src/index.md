@@ -1,6 +1,6 @@
 
 
-<div style="text-align:center"><a href="linktoMeteoNet" style="text-align:center"><img src="img/LogoMeteoNet4.png" ></a></div>
+<div style="text-align:center"><a href="https://meteonet.umr-cnrm.fr/index.html" style="text-align:center"><img src="img/LogoMeteoNet4.png" ></a></div>
 
 
 Welcome to [MeteoNet](https://meteonet.umr-cnrm.fr/index.html)'s documentation! 
