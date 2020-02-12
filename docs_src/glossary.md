@@ -28,7 +28,7 @@ The temperature a sample of air would have if it were expanded by a pseudoadiaba
 
 ## Vertical Velocity
 
-The vertical velocity is the vertical speed of a mass of air. The displacement is expressed in Pa (in meteorology, the vertical levels are often expressed in isobar levels, see [Weather Models](../../data/weather-models) for more details). The higher the height, the lower the pressure. If the vertical velocity is positive, there is an upward current (ex : the earth surface is warmed by the sun). The opposite corresponds to a downdraft (ex : an cold air mass passes above a warmer ground).
+The vertical velocity is the vertical speed of a mass of air. The displacement is expressed in Pa (in meteorology, the vertical levels are often expressed in isobar levels, see [Weather Models](../../../data/weather-models) for more details). The higher the height, the lower the pressure. If the vertical velocity is positive, there is an upward current (ex : the earth surface is warmed by the sun). The opposite corresponds to a downdraft (ex : an cold air mass passes above a warmer ground).
 
 <a name="wind-comp"></a>
 
