@@ -14,5 +14,5 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 
 ## Download
 
-After checking the notebooks, you should have all you need to start playing around with the real dataset. You can download it [here](link).
+After checking the notebooks, you should have all you need to start playing around with the real dataset. You can download it [here](https://meteonet.umr-cnrm.fr/dataset/).
 
