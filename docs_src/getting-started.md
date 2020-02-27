@@ -10,6 +10,10 @@ The notebooks should help you open each data type (grid and point data, differen
 
 The notebooks rely on the meteonet_toolbox package and we recommend that you install it. You just have to follow our  [install guide](install.md).
 
+Once the installation is done, navigate inside the repository and run : ```jupyter notebook```
+
+Now, you should be able to open each notebook and explore the sample data!
+
 
 
 ## Download

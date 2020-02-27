@@ -293,15 +293,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-optional-install-basemap" class="md-nav__link">
-    5. (Optional) Install basemap
+  <a href="#5-install-jupyter-notebook" class="md-nav__link">
+    5. Install Jupyter Notebook
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-troubleshooting" class="md-nav__link">
-    6. Troubleshooting
+  <a href="#6-optional-install-basemap" class="md-nav__link">
+    6. (Optional) Install basemap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-troubleshooting" class="md-nav__link">
+    7. Troubleshooting
   </a>
   
 </li>
@@ -474,15 +481,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-optional-install-basemap" class="md-nav__link">
-    5. (Optional) Install basemap
+  <a href="#5-install-jupyter-notebook" class="md-nav__link">
+    5. Install Jupyter Notebook
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-troubleshooting" class="md-nav__link">
-    6. Troubleshooting
+  <a href="#6-optional-install-basemap" class="md-nav__link">
+    6. (Optional) Install basemap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-troubleshooting" class="md-nav__link">
+    7. Troubleshooting
   </a>
   
 </li>
@@ -534,7 +548,21 @@ conda install -c anaconda xarray
 <div class="highlight"><pre><span></span>pip install -e .
 </pre></div>
 
-<h2 id="5-optional-install-basemap">5. (Optional) Install basemap</h2>
+<h2 id="5-install-jupyter-notebook">5. Install Jupyter Notebook</h2>
+<p>To be able to open our notebooks and use the example code we provided, you will need to install Jupyter Notebook :</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">Conda (Recommended)</label>
+<div class="superfences-content"><div class="highlight"><pre><span></span>conda install -c conda-forge notebook
+</pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">Pip</label>
+<div class="superfences-content"><div class="highlight"><pre><span></span>pip install notebook
+</pre></div></div>
+</div>
+<p>Once the installation is done, navigate inside the repository and run : <code>jupyter notebook</code></p>
+<p>You should be able to open each notebook and explore the sample data. </p>
+<h2 id="6-optional-install-basemap">6. (Optional) Install basemap</h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>As <strong>the basemap library is not maintained anymore</strong> since 2020, you could have installation issues. </p>
@@ -548,7 +576,7 @@ conda install -c anaconda xarray
 <div class="highlight"><pre><span></span>conda install basemap-data-hires
 </pre></div>
 
-<h2 id="6-troubleshooting">6. Troubleshooting</h2>
+<h2 id="7-troubleshooting">7. Troubleshooting</h2>
 <p>You could run into issues when trying to import the xarray or basemap librairies. </p>
 <details class="question"><summary><code>ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect</code></summary><p>The solution is to indicate the path to the file <code>boot.def</code> by adding an <code>ECCODES_DEFINITION_PATH</code> environment variable. See example of configuration in <code>meteonet_toolbox/user_configuration.py</code>.</p>
 </details>

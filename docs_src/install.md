@@ -36,6 +36,22 @@ Once the dependencies are installed, you can install the meteonet_toolbox packag
 pip install -e .
 ```
 
+## Install Jupyter Notebook
+
+To be able to open our notebooks and use the example code we provided, you will need to install Jupyter Notebook :
+
+```sh tab="Conda (Recommended)"
+conda install -c conda-forge notebook
+```
+
+```sh tab="Pip"
+pip install notebook
+```
+
+Once the installation is done, navigate inside the repository and run : ```jupyter notebook```
+
+You should be able to open each notebook and explore the sample data. 
+
 ## (Optional) Install basemap 
 
 !!! warning
