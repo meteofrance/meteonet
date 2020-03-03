@@ -1,5 +1,3 @@
-import numpy as np
-
 #coordinates of boundaries of study zones
 def create_dic_borne(N,S,W,E):
     dic = {
@@ -15,6 +13,4 @@ DOMAINS = {
     'SE'  :  create_dic_borne( 46.25, 41.1, 2, 9.842)
     }
 
-#projection system
-n_epsg = '4326'   #projection system used on the data -> EPSG:4326
 
