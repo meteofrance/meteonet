@@ -83,10 +83,14 @@ conda install basemap-data-hires
 
 ## Troubleshooting
 
-You could run into issues when trying to import the xarray or basemap librairies. 
+You could run into issues when trying to import and/or use the xarray or basemap librairies. 
+
+!!! note
+    It seems that the library Eccodes (used with the xarray library to open GRIB files) can create conflicts with other packages. In a future version, we will stop using the GRIB format and convert the data to the netCDF format, which is more common and should pose less intallation issues.
 
 ??? question "```ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect```"
     The solution is to indicate the path to the file ```boot.def``` by adding an ```ECCODES_DEFINITION_PATH``` environment variable. See example of configuration in ```meteonet_toolbox/user_configuration.py```.
 
 ??? question "```KeyError : 'PROJ_LIB'```"
     The solution is to indicate the path to the file ```epsg``` by adding a ```PROJ_LIB``` environment variable. See example of configuration in ```meteonet_toolbox/user_configuration.py```.
+

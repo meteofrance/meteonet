@@ -596,7 +596,11 @@ If you want to plot nice maps with your data, you can use the cartopy library. T
 </pre></div>
 
 <h2 id="8-troubleshooting">8. Troubleshooting</h2>
-<p>You could run into issues when trying to import the xarray or basemap librairies. </p>
+<p>You could run into issues when trying to import and/or use the xarray or basemap librairies. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It seems that the library Eccodes (used with the xarray library to open GRIB files) can create conflicts with other packages. In a future version, we will stop using the GRIB format and convert the data to the netCDF format, which is more common and should pose less intallation issues.</p>
+</div>
 <details class="question"><summary><code>ECCODES ERROR   :  Unable to find boot.def, the environment variable ECCODES_DEFINITION_PATH is defined but incorrect</code></summary><p>The solution is to indicate the path to the file <code>boot.def</code> by adding an <code>ECCODES_DEFINITION_PATH</code> environment variable. See example of configuration in <code>meteonet_toolbox/user_configuration.py</code>.</p>
 </details>
 <details class="question"><summary><code>KeyError : 'PROJ_LIB'</code></summary><p>The solution is to indicate the path to the file <code>epsg</code> by adding a <code>PROJ_LIB</code> environment variable. See example of configuration in <code>meteonet_toolbox/user_configuration.py</code>.</p>
