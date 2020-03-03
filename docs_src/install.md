@@ -52,14 +52,23 @@ Once the installation is done, navigate inside the repository and run : ```jupyt
 
 You should be able to open each notebook and explore the sample data. 
 
-## (Optional) Install basemap 
+
+## (Optional) Install Cartopy (*master* branch)
+This new mapping library replaces Basemap since 2020. 
+If you want to plot nice maps with your data, you can use the cartopy library. The recommended installation method uses anaconda through the conda-forge channel:
+```sh
+conda install -c conda-forge cartopy 
+```
+
+
+## (Optional) Install Basemap (*basemap* branch)
 
 !!! warning
     As **the basemap library is not maintained anymore** since 2020, you could have installation issues. 
     
-    We plan to update the toolbox with a more recent mapping library such as Mapbox or Cartopy. If you have tried these libraries, or another one, don't hesitate to make a pull request !
+    We updated the toolbox with a more recent mapping library, Cartopy. If you have tried another libraries, don't hesitate to make a pull request !
 
-If you want to plot nice maps with your data, you can use the basemap library. The recommended installation method uses anaconda through the conda-forge channel  as basemap is no longer uploaded to PyPI due to its size and non-python external dependencies :
+If you want to plot nice maps with your data, you can use the basemap library. The recommended installation method uses anaconda through the anaconda channel  as basemap is no longer uploaded to PyPI due to its size and non-python external dependencies :
 
 ```sh
 conda install -c anaconda basemap

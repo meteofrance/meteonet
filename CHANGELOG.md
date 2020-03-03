@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ## Released
 
+## 0.1.1 - 2020-03-03
+
+- Use a new supported basemap library called Cartopy (it replaces Basemap). Update the *master* branch
+- The Basemap library use remains possible but it is no longer managed (creation of the *basemap* branch)
+
 ## 0.1.0 - 2020-30-01
 
 - Push online data samples of the MeteoNet dataset and the toolbox to handle it
