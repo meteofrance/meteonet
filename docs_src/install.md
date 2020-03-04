@@ -45,7 +45,7 @@ conda install -c conda-forge notebook
 ```
 
 ```sh tab="Pip"
-pip install notebook
+pip install jupyter
 ```
 
 Once the installation is done, navigate inside the repository and run : ```jupyter notebook```
@@ -56,8 +56,13 @@ You should be able to open each notebook and explore the sample data.
 ## (Optional) Install Cartopy (*master* branch)
 This new mapping library replaces Basemap since 2020. 
 If you want to plot nice maps with your data, you can use the cartopy library. The recommended installation method uses anaconda through the conda-forge channel:
-```sh
+
+```sh tab="Conda (Recommended)"
 conda install -c conda-forge cartopy 
+```
+
+```sh tab="Pip"
+pip install Cartopy
 ```
 
 
