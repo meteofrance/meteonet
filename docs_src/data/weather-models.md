@@ -68,4 +68,4 @@ The 3D data is stored in 2 different GRIB files, depending on the vertical level
 | File Name | Vertical Levels | Forecasted Parameters |
 | ------ | ------ | ------ |
 | height | 20, 100, 500, 875, 1375, 2000 and 3000 m | Pressure (Pa) |
-| isobar | 1000, 950, 925, 850, 700, 600 and 500 hPa | Temperature (K), [Pseudo-adiabatic potential temperature](../../glossary/#potential-temp) (K), Relative humidity (%), Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../../glossary/#wind-comp) (m.s<sup>-1</sup>), [vertical velocity](../../glossary/#vertical-velocity) (Pa.s<sup>-1</sup>), [geopotential](../../glossary/#geopotential-height) (m<sup>2</sup>.s<sup>-2</sup>) |
+| isobar | 1000, 950, 925, 850, 700, 600 and 500 hPa | Temperature (K), [Pseudo-adiabatic potential temperature of the wet bulb](../../glossary/#potential-temp) (K), Relative humidity (%), Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../../glossary/#wind-comp) (m.s<sup>-1</sup>), [vertical velocity](../../glossary/#vertical-velocity) (Pa.s<sup>-1</sup>), [geopotential](../../glossary/#geopotential-height) (m<sup>2</sup>.s<sup>-2</sup>) |

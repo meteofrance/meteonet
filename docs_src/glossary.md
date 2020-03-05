@@ -20,9 +20,11 @@ A high geopotential height is often associated to an anticyclone and a low geopo
 
 <a name="potential-temp"></a>
 
-## Pseudo-adiabatic Potential Temperature
+## Pseudo-adiabatic Potential Temperature of The Wet Bulb
 
-The temperature a sample of air would have if it were expanded by a pseudoadiabatic process to zero pressure and then compressed to a reference pressure of 1000 hPa by a dry-adiabatic process. This parameters allows to compare the temperature of samples of air that are at different altitudes.
+It indicates the temperature of an air particle would have if it is raised by an adiabatic process until its condensation level, then brought down to a 1000hPa level by a pseudoadiabatic process, while remaining satured without evaporation during its descent. This parameters allows to compare the temperature of samples of air that are at different altitudes.
+
+This parameter is very useful in meteorology to track the dynamic areas of a depression. 
 
 <a name="vertical-velocity"></a>
 
@@ -34,7 +36,7 @@ The vertical velocity is the vertical speed of a mass of air. The displacement i
 
 ## Wind Components
 
-The U and V wind components are the two wind speed vector components :
+The U and V wind components are the two horizontal wind speed vector components :
 
 * U : from west to east
   
