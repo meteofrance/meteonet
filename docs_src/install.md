@@ -16,7 +16,7 @@ git clone https://github.com/meteofrance/meteonet.git
 
 ## Install dependencies
 
-You just have to run the following commands :
+We noticed some version incompatility issues between packages, especially during installation of basemap librairies like Cartopy. So it is recommended to use virtual environments (using conda if you have Anaconda : https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/ or virtualenv of you use pip : https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/). Once you created your virtual environment, you just have to run the following commands :
 
 ```sh tab="Conda (Recommended)"
 conda install -c conda-forge eccodes
