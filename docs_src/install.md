@@ -19,6 +19,11 @@ git clone https://github.com/meteofrance/meteonet.git
 We noticed some version incompatility issues between packages, especially during installation of basemap librairies like Cartopy. So it is recommended to use virtual environments (using conda if you have Anaconda : https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/ or virtualenv of you use pip : https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/). Once you created your virtual environment, you just have to run the following commands :
 
 ```sh tab="Conda (Recommended)"
+#only if you start from an empty virtual environment 
+#conda install -c anaconda numpy>=1.14.0
+#conda install -c anaconda pandas>=0.24.0
+#conda install -c anaconda scipy
+#conda install -c conda-forge matplotlib 
 conda install -c conda-forge eccodes
 conda install -c conda-forge cfgrib
 conda install -c anaconda xarray

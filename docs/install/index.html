@@ -548,7 +548,12 @@
 <div class="superfences-tabs">
 <input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
 <label for="__tab_1_0">Conda (Recommended)</label>
-<div class="superfences-content"><div class="highlight"><pre><span></span>conda install -c conda-forge eccodes
+<div class="superfences-content"><div class="highlight"><pre><span></span><span class="c1">#only if you start from an empty virtual environment </span>
+<span class="c1">#conda install -c anaconda numpy&gt;=1.14.0</span>
+<span class="c1">#conda install -c anaconda pandas&gt;=0.24.0</span>
+<span class="c1">#conda install -c anaconda scipy</span>
+<span class="c1">#conda install -c conda-forge matplotlib </span>
+conda install -c conda-forge eccodes
 conda install -c conda-forge cfgrib
 conda install -c anaconda xarray
 </pre></div></div>
