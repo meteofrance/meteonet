@@ -1,0 +1,15 @@
+name: meteonet_toolbox
+channels:
+  - conda-forge
+dependencies:
+- python
+- numpy
+- pandas
+- scipy
+- eccodes
+- cfgrib
+- xarray
+- notebook
+- cartopy
+- basemap
+- basemap-data-hires
