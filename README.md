@@ -1,6 +1,7 @@
 # MeteoNet : Data exploration toolbox
 
-This repository is intended as a toolbox to handle the MeteoNet dataset. It's also a communication interface with MeteoNet's users : if  you have a request or a problem concerning MeteoNet, you can post an  [issue](https://github.com/meteofrance/meteonet/issues) on this project. For more information (installation, data types, glossary...), check out our [documentation](https://meteofrance.github.io/meteonet/) !
+This repository is intended as a toolbox to handle the MeteoNet dataset. It's also a communication interface with MeteoNet's users : if  you have a request or a problem concerning MeteoNet, you can post an  [issue](https://github.com/meteofrance/meteonet/issues) on this project. For more information (installation, data types, glossary...), check out our [documentation](https://meteofrance.github.io/meteonet/) 
+! Some of the data are also available on [Kaggle](https://www.kaggle.com/katerpillar/meteonet) with notebooks to help you explore, cross-check all data types and predict time series ! You can propose and perform your own challenges!
 
 1. [What is MeteoNet ?](#meteonet)
 2. [How to use this repository ?](#description)
