@@ -1,8 +1,8 @@
 site_name: MeteoNet's Documentation
 theme:
   name: 'material'
-  logo:
-    icon: 'cloud'
+  icon:
+    logo: 'material/cloud'
 repo_url: https://github.com/meteofrance/meteonet
 repo_name: 'GitHub'
 

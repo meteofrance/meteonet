@@ -19,6 +19,7 @@ If you want to get a preview of your changes, start by **installing the followin
 * mkdocs-awesome-pages-plugin
 * mkdocs-material
 * pymdown-extensions
+* python-markdown-math
 
 Then, navigate to the root of the repository and run ```mkdocs serve```. 
 
