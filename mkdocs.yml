@@ -3,6 +3,8 @@ theme:
   name: 'material'
   icon:
     logo: 'material/cloud'
+  features:
+    - tabs
 repo_url: https://github.com/meteofrance/meteonet
 repo_name: 'GitHub'
 
@@ -39,14 +41,28 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 nav:
-  - 'index.md'
-  - 'getting-started.md'
-  - 'install.md'
-  - Data:
-    - 'data/summary.md'
-    - 'data/ground-observations.md'
-    - 'data/rain-radar.md'
-    - 'data/weather-models.md'
-    - 'data/land-relief-masks.md'
-  - 'glossary.md'
-  - 'help.md'
+  - English:
+    - 'index.md'
+    - 'english/getting-started.md'
+    - 'english/install.md'
+    - Data:
+      - 'english/data/summary.md'
+      - 'english/data/ground-observations.md'
+      - 'english/data/rain-radar.md'
+      - 'english/data/weather-models.md'
+      - 'english/data/land-relief-masks.md'
+    - 'english/glossary.md'
+    - 'english/help.md'
+  - Français:
+    - 'french/accueil.md'
+    - 'french/commencer.md'
+    - 'french/installation.md'
+    - Données:
+      - 'french/donnees/resume.md'
+      - 'french/donnees/stations-observation.md'
+      - 'french/donnees/radar-pluie.md'
+      - 'french/donnees/modeles-meteo.md'
+      - 'french/donnees/masques-terre-relief.md'
+    - 'french/glossaire.md'
+    - 'french/aide.md'
+  
