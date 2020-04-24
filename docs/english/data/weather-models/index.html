@@ -375,22 +375,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#meteo-frances-forecast-models" class="md-nav__link">
-    METEO FRANCE's Forecast Models
+  <a href="#1-meteo-frances-forecast-models" class="md-nav__link">
+    1. METEO FRANCE's Forecast Models
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2d-parameters" class="md-nav__link">
-    2D Parameters
+  <a href="#2-2d-parameters" class="md-nav__link">
+    2. 2D Parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3d-parameters" class="md-nav__link">
-    3D Parameters
+  <a href="#3-3d-parameters" class="md-nav__link">
+    3. 3D Parameters
   </a>
   
 </li>
@@ -654,22 +654,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#meteo-frances-forecast-models" class="md-nav__link">
-    METEO FRANCE's Forecast Models
+  <a href="#1-meteo-frances-forecast-models" class="md-nav__link">
+    1. METEO FRANCE's Forecast Models
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2d-parameters" class="md-nav__link">
-    2D Parameters
+  <a href="#2-2d-parameters" class="md-nav__link">
+    2. 2D Parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3d-parameters" class="md-nav__link">
-    3D Parameters
+  <a href="#3-3d-parameters" class="md-nav__link">
+    3. 3D Parameters
   </a>
   
 </li>
@@ -696,7 +696,7 @@
                 
                 <h1 id="weather-forecast-models">Weather Forecast Models</h1>
 <p><img alt="WeatherForecast" src="../../../img/Weather-Models.png" /></p>
-<h2 id="meteo-frances-forecast-models">METEO FRANCE's Forecast Models</h2>
+<h2 id="1-meteo-frances-forecast-models">1. METEO FRANCE's Forecast Models</h2>
 <p>Météo-France produces several models to forecast the weather. These models are based on physical equations modelling the physical behaviours influencing the weather, such as atmospheric or oceanic phenomenons... 
 They compute a lot of weather parameters (temperature, wind speed, humidity...) at different points on the globe in 4 dimensions (latitude, longitude, height and time).</p>
 <p>Each model runs several times a day at a fixed time. Each execution is called a '<em>run</em>'. Each time-step for which we have weather forecasts is called a '<em>valid time</em>'.</p>
@@ -734,7 +734,7 @@ On the vertical axis (height), the points are not necessarily regurlarly spaced;
 <p>All these characteristics are the result of compromises between the need for precision and for long time scale and the computing times and costs.</p>
 <p>In pratice, ARPEGE is used to forecast the weather on Europe and AROME is used to forecast the weather on France. </p>
 <p>In the dataset, we provided the results of <strong>2D models</strong> (forecasts are on a grid longitude x latitude) and <strong>3D models</strong> (forecasts are on a grid longitude x latitude x height).</p>
-<h2 id="2d-parameters">2D Parameters</h2>
+<h2 id="2-2d-parameters">2. 2D Parameters</h2>
 <p>Two 2D weather models are available in the dataset :</p>
 <ul>
 <li>
@@ -785,7 +785,7 @@ On the vertical axis (height), the points are not necessarily regurlarly spaced;
 <p class="admonition-title">Info</p>
 <p>When you open a GRIB file with the xarray library, a new associated <code>.idx</code> file is created. </p>
 </div>
-<h2 id="3d-parameters">3D Parameters</h2>
+<h2 id="3-3d-parameters">3. 3D Parameters</h2>
 <p>One 3D weather model is avaible : the large-mesh French weather model named '<strong>ARPEGE</strong>'.</p>
 <p>For each geographical zone (NW and SE), the model was run each day at 00h and its forecasts range from 00h to 24h. The time-step between forecasts vary depending on the time of the day : from 0h to 12h, forecasts are available each hour, and from 12h to 24h, forecasts are available every three hours. Indeed, the model is more precise for the first hours of the days, closer to the moment the model was run, and its precision degrades as time passes.</p>
 <p>The 3D data is stored in 2 different GRIB files, depending on the vertical level of the parameters :</p>

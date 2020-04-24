@@ -60,13 +60,17 @@ You should be able to open each notebook and explore the sample data.
 
 ## (Optional) Install Cartopy (*master* branch)
 This new mapping library replaces Basemap since 2020. 
-If you want to plot nice maps with your data, you can use the cartopy library. The recommended installation method uses anaconda through the conda-forge channel:
+If you want to plot nice maps with your data, you can use the cartopy library. The recommended installation method uses anaconda through the conda-forge channel: 
 
 ```sh tab="Conda (Recommended)"
 conda install -c conda-forge cartopy 
 ```
 
 ```sh tab="Pip"
+#The list of Cartopy dependencies can be found on this page : https://scitools.org.uk/cartopy/docs/latest/installing.html. 
+#Required version of PROJ is 4.9.0 or later.
+#Shapely should be install with:
+pip install shapely --no-binary shapely
 pip install Cartopy
 ```
 
