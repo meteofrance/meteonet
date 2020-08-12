@@ -1,11 +1,13 @@
 name: meteonet_toolbox
 channels:
   - conda-forge
+  - anaconda 
 dependencies:
 - python
-- numpy
-- pandas
+- numpy>=1.14.0
+- pandas>=0.24.0
 - scipy
+- matplotlib
 - eccodes
 - cfgrib
 - xarray
