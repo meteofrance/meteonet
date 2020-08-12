@@ -47,10 +47,10 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
 | 2m | 2 meters | Temperature (K), [Dew point](../../glossary/#dew-point) (K), Telative humidity (%) |
 | 10m | 10 meters | Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../../glossary/#wind-comp) (m.s<sup>-1</sup>) |
 | P_sea_level | sea level | Mean sea level pressure (Pa) |
-| PRECIP | ground level | Total precipitation (kg.m<sup>-2</sup>) |
+| PRECIP | ground level | Total precipitation (kg.m<sup>-2</sup> which is equivalent to mm) since the beginning of the model run |
 
 !!! warning
-    The total precipitation parameter forecast begins at 1h, and not 0h as the other parameters.
+    The total precipitation parameter forecast begins at 1h, and not 0h as the other parameters. For now it is about total precipitation since the beginning of the model run. It is planned in a future version to modify that parameter in order to have the total precipitation between two time steps instead. 
 
 !!! info
     When you open a GRIB file with the xarray library, a new associated ```.idx``` file is created. 
