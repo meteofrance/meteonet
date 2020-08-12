@@ -4,6 +4,23 @@
 
 <a name="radar-data"></a>
 
+### Files organization
+
+The files are stored with 4 compression levels : 
+
+* two per year (.tar.gz and .tar)
+* two per month (.tar.gz and .tar). 
+  
+For each month, the data are stored per period of 10 or 11 days (each month is separated in 3 files) : 
+
+* part 1 : from day 1 to day 9
+* part 2 : from day 10 to day 20
+* part 3 : from day 21 to day 30 or 31 according to the month
+
+Example
+
+Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz*
+
 ## Radar Data
 
 For each radar data type, you will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). 

@@ -364,6 +364,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#1-files-organization" class="md-nav__link">
+    1. Files organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-radar-data" class="md-nav__link">
     1. Radar Data
   </a>
@@ -682,6 +689,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#1-files-organization" class="md-nav__link">
+    1. Files organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-radar-data" class="md-nav__link">
     1. Radar Data
   </a>
@@ -752,6 +766,20 @@
                 <h1 id="rain-radar">Rain Radar</h1>
 <p><img alt="Masks" src="../../../img/Rain-Radar.png" /></p>
 <p><a name="radar-data"></a></p>
+<h3 id="1-files-organization">1. Files organization</h3>
+<p>The files are stored with 4 compression levels : </p>
+<ul>
+<li>two per year (.tar.gz and .tar)</li>
+<li>two per month (.tar.gz and .tar). </li>
+</ul>
+<p>For each month, the data are stored per period of 10 or 11 days (each month is separated in 3 files) : </p>
+<ul>
+<li>part 1 : from day 1 to day 9</li>
+<li>part 2 : from day 10 to day 20</li>
+<li>part 3 : from day 21 to day 30 or 31 according to the month</li>
+</ul>
+<p>Example</p>
+<p>Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : <em>/data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz</em></p>
 <h2 id="1-radar-data">1. Radar Data</h2>
 <p>For each radar data type, you will find one archive per year and per zone, each one sliced in periods of 10 or 11 days (each month is separated in 3 files). </p>
 <p>Each <code>.npz</code> file contains 3 arrays :</p>
