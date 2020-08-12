@@ -735,6 +735,11 @@ On the vertical axis (height), the points are not necessarily regurlarly spaced;
 <p>All these characteristics are the result of compromises between the need for precision and for long time scale and the computing times and costs.</p>
 <p>In pratice, ARPEGE is used to forecast the weather on Europe and AROME is used to forecast the weather on France. </p>
 <p>In the dataset, we provided the results of <strong>2D models</strong> (forecasts are on a grid longitude x latitude) and <strong>3D models</strong> (forecasts are on a grid longitude x latitude x height).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some files in the model files are incomplete/corrupted. It comes from the database of our corporation. There are archiving anomalies. We are working on a new version of MeteoNet and will take into account these anomalies. 
+Meanwhile, you can detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion <a href="https://www.kaggle.com/katerpillar/meteonet/discussion/157206">https://www.kaggle.com/katerpillar/meteonet/discussion/157206</a> and in Github (<a href="https://github.com/meteofrance/meteonet/issues/14">https://github.com/meteofrance/meteonet/issues/14</a>). </p>
+</div>
 <h2 id="2-2d-parameters">2. 2D Parameters</h2>
 <p>Two 2D weather models are available in the dataset :</p>
 <ul>

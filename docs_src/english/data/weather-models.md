@@ -28,6 +28,10 @@ In pratice, ARPEGE is used to forecast the weather on Europe and AROME is used t
 
 In the dataset, we provided the results of **2D models** (forecasts are on a grid longitude x latitude) and **3D models** (forecasts are on a grid longitude x latitude x height).
 
+!!! warning
+    Some files in the model files are incomplete/corrupted. It comes from the database of our corporation. There are archiving anomalies. We are working on a new version of MeteoNet and will take into account these anomalies. 
+    Meanwhile, you can detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion https://www.kaggle.com/katerpillar/meteonet/discussion/157206 and in Github (https://github.com/meteofrance/meteonet/issues/14). 
+
 
 ## 2D Parameters
 
