@@ -11,5 +11,3 @@ dependencies:
 - xarray
 - notebook
 - cartopy
-- basemap
-- basemap-data-hires
