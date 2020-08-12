@@ -20,7 +20,7 @@ The time step between two radar scans is 5 min. The radar starts scanning at 00h
 
 The radar's spatial resolution is 0.01° and the projection system used is EPSG:4326.
 
-You will also find a `radar_coords_ZONE.npz` file containing 2 arrays `lats` and `lons`, indicating the coordinates (latitude and longitude) of the top left corner of each radar pixel.
+You will also find a `radar_coords_ZONE.npz` file containing 2 arrays `lats` and `lons`, indicating the coordinates (latitude and longitude) of the center of each radar pixel.
 
 ## Cumulated Rainfall 
 
