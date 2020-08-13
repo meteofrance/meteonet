@@ -35,6 +35,7 @@ In the dataset, we provided the results of **2D models** (forecasts are on a gri
 
 ## 2D Parameters
 
+### Description 
 
 Two 2D weather models are available in the dataset :
 
@@ -48,7 +49,7 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
 
 | File Name | Vertical Level | Forecasted Parameters |
 | ------ | ------ | ------ |
-| 2m | 2 meters | Temperature (K), [Dew point](../../glossary/#dew-point) (K), Telative humidity (%) |
+| 2m | 2 meters | Temperature (K), [Dew point](../../glossary/#dew-point) (K), Relative humidity (%) |
 | 10m | 10 meters | Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../../glossary/#wind-comp) (m.s<sup>-1</sup>) |
 | P_sea_level | sea level | Mean sea level pressure (Pa) |
 | PRECIP | ground level | Total precipitation (kg.m<sup>-2</sup> which is equivalent to mm) since the beginning of the model run |
@@ -59,9 +60,26 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
 !!! info
     When you open a GRIB file with the xarray library, a new associated ```.idx``` file is created. 
 
+### Files organization
+
+The files are stored with 4 compression levels : 
+
+* two per year (.tar.gz and .tar)
+* two per month (.tar.gz and .tar). 
+  
+Then, the data are stored, in this order, by : 
+
+1. Weather forecast model : AROME or ARPEGE
+2. Vertical level : 2m, 10m, P_sea_level or PRECIP
+3. One file per day 
+
+Example
+
+Here is the path for the NW zone, year 2016, January, AROME model, 2m vertical level, day 1 : */data/NW/weather_models/2D_parameters/NW_weather_models_2D_parameters_2016.tar.gz/NW_weather_models_2D_parameters_2016.tar/NW_weather_models_2D_parameters_2016/NW_weather_models_2D_parameters_201601.tar.gz/NW_weather_models_2D_parameters_201601.tar/201601/AROME/2m/arome_2m_NW_20160101000000.grib*
 
 ## 3D Parameters
 
+### Description
 
 One 3D weather model is avaible : the large-mesh French weather model named '**ARPEGE**'.
 
@@ -73,3 +91,20 @@ The 3D data is stored in 2 different GRIB files, depending on the vertical level
 | ------ | ------ | ------ |
 | height | 20, 100, 500, 875, 1375, 2000 and 3000 m | Pressure (Pa) |
 | isobar | 1000, 950, 925, 850, 700, 600 and 500 hPa | Temperature (K), [Pseudo-adiabatic potential temperature of the wet bulb](../../glossary/#potential-temp) (K), Relative humidity (%), Wind speed (m.s<sup>-1</sup>), Wind direction (°), [U and V wind components](../../glossary/#wind-comp) (m.s<sup>-1</sup>), [vertical velocity](../../glossary/#vertical-velocity) (Pa.s<sup>-1</sup>), [geopotential](../../glossary/#geopotential-height) (m<sup>2</sup>.s<sup>-2</sup>) |
+
+### Files organization
+
+The files are stored with 4 compression levels : 
+
+* two per year (.tar.gz and .tar)
+* two per month (.tar.gz and .tar). 
+  
+Then, the data are stored, in this order, by : 
+
+1. Weather forecast model : ARPEGE only
+2. Vertical level : isobar or height 
+3. One file per day 
+   
+Example
+
+Here is the path for the NW zone, year 2016, January, ARPEGE model, isobar level, day 1 : */data/NW/weather_models/3D_parameters/NW_weather_models_3D_parameters_2016.tar.gz/NW_weather_models_3D_parameters_2016.tar/NW_weather_models_3D_parameters_2016/NW_weather_models_3D_parameters_201601.tar.gz/NW_weather_models_3D_parameters_201601.tar/201601/ARPEGE/3D_isobar/arpege_3D_isobar_NW_20160101000000.grib*

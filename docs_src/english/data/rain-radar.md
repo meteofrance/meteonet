@@ -2,24 +2,7 @@
 
 ![Masks](../../img/Rain-Radar.png)
 
-<a name="radar-data"></a>
-
-### Files organization
-
-The files are stored with 4 compression levels : 
-
-* two per year (.tar.gz and .tar)
-* two per month (.tar.gz and .tar). 
-  
-For each month, the data are stored per period of 10 or 11 days (each month is separated in 3 files) : 
-
-* part 1 : from day 1 to day 9
-* part 2 : from day 10 to day 20
-* part 3 : from day 21 to day 30 or 31 according to the month
-
-Example
-
-Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz*
+<a name="rain-radar-data"></a>
 
 ## Radar Data
 
@@ -41,18 +24,40 @@ You will also find a `radar_coords_ZONE.npz` file containing 2 arrays `lats` and
 
 ## Cumulated Rainfall 
 
-The rainfall data is organized as specified [here](#radar-data).
+### Description
+
+The rainfall data is organized as specified [here](#rain-radar-data).
 
 The `data` array contains a rainfall map for each time step. For each pixel, the value represents the cumulated rainfall in hundreth of millimeters (\(10^{-2} mm\)). If the value is missing then the value is -1.
 
 ![Masks](../../img/Rain-Radar-4.png)
 
+<a name="rain-radar_data_org"></a>
+
+### Files organization
+
+The files are stored with 4 compression levels : 
+
+* two per year (.tar.gz and .tar)
+* two per month (.tar.gz and .tar). 
+  
+For each month, the data are stored per period of 10 or 11 days (each month is separated in 3 files) : 
+
+* part 1 : from day 1 to day 9
+* part 2 : from day 10 to day 20
+* part 3 : from day 21 to day 30 or 31 according to the month
+
+Example
+
+Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz*
 
 ## Rain Radar Quality Code
 
+### Description
+
 For each pixel of the rainfall product is associated a quality code with values ranging between 0 (very bad) and 100 (perfect), the values are in percents. If the value is missing, then the value is 255.
 
-The rain radar quality code data is organized as specified [here](#radar-data). The original data was to heavy to be manipulated so the quality code data are divided into 2 files :
+The rain radar quality code data is organized as specified [here](#rain-radar-data). The original data was to heavy to be manipulated so the quality code data are divided into 2 files :
 
 * `rainfall_mean_quality_DATE.npz` contains the quality code's average over a day and for each pixel.
   
@@ -61,9 +66,22 @@ The rain radar quality code data is organized as specified [here](#radar-data). 
 !!! info
     **Remark about the average quality code computation** : if there is no value for a whole day on 1 pixel, it will be indicated as a missing value in the `mean` file, else the mean computation is done over the non missing values for 1 day and 1 pixel.
 
-
-
 ![Masks](../../img/Rain-Radar-Quality-Code.png)
+
+### Files organization
+
+The files are stored in the same way as the [cumulated Rainfall](#rain-radar_data_org) (4 compression levels). At the month level, the files are split into two categories : `mean` and `diff` (cf part Description above). 
+For example, for the NW zone, year 2016, January, there are two files : 
+
+* rainfall-mean-quality-code-NW-2016-01.tar.gz
+* rainfall-diff-quality-code-NW-2016-01.tar.gz
+  
+Example
+
+Here are the paths for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : 
+
+* `mean` data : */data/NW/radar/rainfall_quality_code/NW_rainfall_quality_code_2016.tar.gz/NW_rainfall_quality_code_2016.tar/NW_rainfall_quality_code_2016/rainfall-`mean`-quality-code-NW-2016-01.tar.gz/rainfall-`mean`-quality-code-NW-2016-01.tar/rainfall-`mean`-quality-code-NW-2016-01/rainfall_`mean`_quality-code_NW_2016_01.1.npz*
+* `diff` data : */data/NW/radar/rainfall_quality_code/NW_rainfall_quality_code_2016.tar.gz/NW_rainfall_quality_code_2016.tar/NW_rainfall_quality_code_2016/rainfall-`diff`-quality-code-NW-2016-01.tar.gz/rainfall-`diff`-quality-code-NW-2016-01.tar/rainfall-`diff`-quality-code-NW-2016-01/rainfall_`diff`_quality-code_NW_2016_01.1.npz*
 
 ## Reflectivity
 
@@ -79,10 +97,12 @@ In 2018, METEO FRANCE introduced a new reflectivity product, with additional dat
 
 ### Old Product
 
+#### Description
+
 !!! warning
     The old product data range from 01/01/2016 to 30/10/18 included. 
 
-The rain radar data are organized as specified [here](#radar-data).
+The rain radar data are organized as specified [here](#rain-radar-data).
 
 Each pixel of the `data` array contains a reflectivity value expressed in dBZ, computed using the lower bound of reflecivity levels as follows :
 
@@ -95,11 +115,19 @@ Each pixel of the `data` array contains a reflectivity value expressed in dBZ, c
 | 53    | \(70 \leq Z\) dBZ | 70 |
 | 255   | No value or missing data | 255 |
 
-
-
 ![Masks](../../img/Rain-Radar-Reflectivity-Old.png)
 
+#### Files organization
+
+The files are stored in the same way as the [cumulated Rainfall](#rain-radar_data_org) (4 compression levels). 
+
+Example
+
+Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/reflectivity_old_product/NW_reflectivity_old_product_2016.tar.gz/NW_reflectivity_old_product_2016.tar/NW_reflectivity_old_product_2016/reflectivity-old-NW-2016-01.tar.gz/reflectivity-old-NW-2016-01.tar/reflectivity-old-NW-2016-01/reflectivity_old_NW_2016_01.1.npz*
+
 ### New Product
+
+#### Description
 
 !!! warning
     The new product data range from 01/02/2018 to 31/12/18 included. 
@@ -114,7 +142,7 @@ The new reflectivity product introduced the following changes :
 
 * 2 additionnal products : rain probability and selected measure height
 
-The rain radar data are organized as specified [here](#radar-data), with 2 additionnals arrays `prob` and `height`, and contains the following data :
+The rain radar data are organized as specified [here](#rain-radar-data), with 2 additionnals arrays `prob` and `height`, and contains the following data :
 
 * `data` : reflectivity values (in 1/10 dBZ)
 
@@ -125,3 +153,11 @@ The rain radar data are organized as specified [here](#radar-data), with 2 addit
 The '*non detection data*' value is -100 and the '*missing data*' value is -200.
 
 ![Masks](../../img/Rain-Radar-Reflectivity-New.png)
+
+#### Files organization
+
+The files are stored in the same way as the [cumulated Rainfall](#rain-radar_data_org) (4 compression levels). 
+
+Example
+
+Here is the path for the NW zone, year 2018, March, first part of month (from day 1 to day 9) : */data/NW/radar/reflectivity_new_product/NW_reflectivity_new_product_2018.tar.gz/NW_reflectivity_new_product_2018.tar/NW_reflectivity_new_product_2018/reflectivity-new-NW-2018-03.tar.gz/reflectivity-new-NW-2018-03.tar/reflectivity-new-NW-2018-03/reflectivity_new_NW_2018_03.1.npz*

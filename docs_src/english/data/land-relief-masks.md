@@ -1,5 +1,7 @@
 # Land-Sea and Relief Masks
 
+## Description 
+
 ![Masks](../../img/Masks.png)
 
 For each geographical zone (North-West (NW) of France and South-East (SE) of France), two different masks are stored in a GRIB file:
@@ -11,3 +13,10 @@ For each geographical zone (North-West (NW) of France and South-East (SE) of Fra
 The spatial resolution of the masks is 0.025°. 
 
 Note : When you open a GRIB file with the library xarray, a new associated ```.idx``` file is created. 
+
+## Files organization
+
+The files are stored by zone :
+
+* NW zone : */data/NW/masks/NW_masks.grib*
+* SE zone : */data/SE/masks/SE_masks.grib*
