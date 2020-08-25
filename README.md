@@ -10,7 +10,7 @@ This repository is intended as a toolbox to handle the MeteoNet dataset. It's al
 # What is MeteoNet ?<a name="meteonet"></a>
   ![imageMeteoNet](docs_src/img/MeteoNet3img.png "Example of MeteoNet data")
 
-MeteoNet is a meteorological dataset released by Météo France, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
+MeteoNet is a meteorological dataset released by METEO FRANCE, the French national meteorological service. Our goal is to provide a clean and ready-to-use dataset for Data Scientist who want to try their hand on weather data.
 
 The data spans over 3 years, 2016 to 2018, and covers two geographical areas : the north-western and south-eastern quarters of France.
 
@@ -31,7 +31,7 @@ All the install instructions for our toolbox are available [here](https://meteof
 
 # Licence <a name="licence"></a>
 
-The Dataset is licenced by Meteo-France under [Etalab Open Licence 2.0](https://github.com/meteofrance/meteonet/blob/master/LICENCE.md).
+The Dataset is licenced by METEO FRANCE under [Etalab Open Licence 2.0](https://github.com/meteofrance/meteonet/blob/master/LICENCE.md).
 
 When using this dataset, please cite:
-<br/>Gwennaëlle Larvor, Léa Berthomier, Vincent Chabot, Brice Le Pape, Bruno Pradel, Lior Perez. **MeteoNet, an open reference weather dataset by Meteo-France**, 2020
+<br/>Gwennaëlle Larvor, Léa Berthomier, Vincent Chabot, Brice Le Pape, Bruno Pradel, Lior Perez. **MeteoNet, an open reference weather dataset by METEO FRANCE**, 2020
