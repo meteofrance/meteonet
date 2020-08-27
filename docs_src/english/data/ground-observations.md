@@ -11,7 +11,10 @@ For each zone, the files are stored per year with 2 compression levels (.tar.gz 
 
 Example
 
-Here is the path for the NW zone, year 2016 : */data/NW/ground_stations/NW_ground_stations_2016.tar.gz/NW2016.tar/NW2016.csv*
+Here is the path for the NW zone, year 2016 :  
+*/data/NW/ground_stations/*  
+*NW_ground_stations_2016.tar.gz/*  
+*NW2016.tar/NW2016.csv*
 
 ### Metadata
 

@@ -49,7 +49,10 @@ For each month, the data are stored per period of 10 or 11 days (each month is s
 
 Example
 
-Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz*
+Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) :  
+*/data/NW/radar/rainfall/NW_rainfall_2016.tar.gz/*  
+*NW_rainfall_2016.tar/NW_rainfall_2016/rainfall-NW-2016-01.tar.gz/*  
+*rainfall-NW-2016-01.tar/rainfall-NW-2016-01/rainfall_NW_2016_01.1.npz*
 
 ## Rain Radar Quality Code
 
@@ -80,8 +83,24 @@ Example
 
 Here are the paths for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : 
 
-* `mean` data : */data/NW/radar/rainfall_quality_code/NW_rainfall_quality_code_2016.tar.gz/NW_rainfall_quality_code_2016.tar/NW_rainfall_quality_code_2016/rainfall-`mean`-quality-code-NW-2016-01.tar.gz/rainfall-`mean`-quality-code-NW-2016-01.tar/rainfall-`mean`-quality-code-NW-2016-01/rainfall_`mean`_quality-code_NW_2016_01.1.npz*
-* `diff` data : */data/NW/radar/rainfall_quality_code/NW_rainfall_quality_code_2016.tar.gz/NW_rainfall_quality_code_2016.tar/NW_rainfall_quality_code_2016/rainfall-`diff`-quality-code-NW-2016-01.tar.gz/rainfall-`diff`-quality-code-NW-2016-01.tar/rainfall-`diff`-quality-code-NW-2016-01/rainfall_`diff`_quality-code_NW_2016_01.1.npz*
+* `mean` data :  
+*/data/NW/radar/rainfall_quality_code/*  
+*NW_rainfall_quality_code_2016.tar.gz/*  
+*NW_rainfall_quality_code_2016.tar/*  
+*NW_rainfall_quality_code_2016/*  
+*rainfall-`mean`-quality-code-NW-2016-01.tar.gz/*  
+*rainfall-`mean`-quality-code-NW-2016-01.tar/*  
+*rainfall-`mean`-quality-code-NW-2016-01/*  
+*rainfall_`mean`_quality-code_NW_2016_01.1.npz*
+* `diff` data :  
+*/data/NW/radar/rainfall_quality_code/*  
+*NW_rainfall_quality_code_2016.tar.gz/*  
+*NW_rainfall_quality_code_2016.tar/*  
+*NW_rainfall_quality_code_2016/*  
+*rainfall-`diff`-quality-code-NW-2016-01.tar.gz/*  
+*rainfall-`diff`-quality-code-NW-2016-01.tar/*  
+*rainfall-`diff`-quality-code-NW-2016-01/*  
+*rainfall_`diff`_quality-code_NW_2016_01.1.npz*
 
 ## Reflectivity
 
@@ -123,7 +142,15 @@ The files are stored in the same way as the [cumulated Rainfall](#rain-radar_dat
 
 Example
 
-Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9) : */data/NW/radar/reflectivity_old_product/NW_reflectivity_old_product_2016.tar.gz/NW_reflectivity_old_product_2016.tar/NW_reflectivity_old_product_2016/reflectivity-old-NW-2016-01.tar.gz/reflectivity-old-NW-2016-01.tar/reflectivity-old-NW-2016-01/reflectivity_old_NW_2016_01.1.npz*
+Here is the path for the NW zone, year 2016, January, first part of month (from day 1 to day 9):  
+*/data/NW/radar/reflectivity_old_product/*  
+*NW_reflectivity_old_product_2016.tar.gz/*  
+*NW_reflectivity_old_product_2016.tar/*  
+*NW_reflectivity_old_product_2016/*  
+*reflectivity-old-NW-2016-01.tar.gz/*  
+*reflectivity-old-NW-2016-01.tar/*  
+*reflectivity-old-NW-2016-01/*  
+*reflectivity_old_NW_2016_01.1.npz*
 
 ### New Product
 
@@ -160,4 +187,12 @@ The files are stored in the same way as the [cumulated Rainfall](#rain-radar_dat
 
 Example
 
-Here is the path for the NW zone, year 2018, March, first part of month (from day 1 to day 9) : */data/NW/radar/reflectivity_new_product/NW_reflectivity_new_product_2018.tar.gz/NW_reflectivity_new_product_2018.tar/NW_reflectivity_new_product_2018/reflectivity-new-NW-2018-03.tar.gz/reflectivity-new-NW-2018-03.tar/reflectivity-new-NW-2018-03/reflectivity_new_NW_2018_03.1.npz*
+Here is the path for the NW zone, year 2018, March, first part of month (from day 1 to day 9) :  
+*/data/NW/radar/reflectivity_new_product/*  
+*NW_reflectivity_new_product_2018.tar.gz/*  
+*NW_reflectivity_new_product_2018.tar/*  
+*NW_reflectivity_new_product_2018/*  
+*reflectivity-new-NW-2018-03.tar.gz/*  
+*reflectivity-new-NW-2018-03.tar/*  
+*reflectivity-new-NW-2018-03/*  
+*reflectivity_new_NW_2018_03.1.npz*

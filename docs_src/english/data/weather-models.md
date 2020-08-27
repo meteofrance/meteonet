@@ -75,7 +75,15 @@ Then, the data are stored, in this order, by :
 
 Example
 
-Here is the path for the NW zone, year 2016, January, AROME model, 2m vertical level, day 1 : */data/NW/weather_models/2D_parameters/NW_weather_models_2D_parameters_2016.tar.gz/NW_weather_models_2D_parameters_2016.tar/NW_weather_models_2D_parameters_2016/NW_weather_models_2D_parameters_201601.tar.gz/NW_weather_models_2D_parameters_201601.tar/201601/AROME/2m/arome_2m_NW_20160101000000.grib*
+Here is the path for the NW zone, year 2016, January, AROME model, 2m vertical level, day 1:  
+*/data/NW/weather_models/2D_parameters/*  
+*NW_weather_models_2D_parameters_2016.tar.gz/*  
+*NW_weather_models_2D_parameters_2016.tar/*  
+*NW_weather_models_2D_parameters_2016/*  
+*NW_weather_models_2D_parameters_201601.tar.gz/*  
+*NW_weather_models_2D_parameters_201601.tar/*  
+*201601/AROME/2m/*  
+*arome_2m_NW_20160101000000.grib*
 
 ## 3D Parameters
 
@@ -107,4 +115,12 @@ Then, the data are stored, in this order, by :
    
 Example
 
-Here is the path for the NW zone, year 2016, January, ARPEGE model, isobar level, day 1 : */data/NW/weather_models/3D_parameters/NW_weather_models_3D_parameters_2016.tar.gz/NW_weather_models_3D_parameters_2016.tar/NW_weather_models_3D_parameters_2016/NW_weather_models_3D_parameters_201601.tar.gz/NW_weather_models_3D_parameters_201601.tar/201601/ARPEGE/3D_isobar/arpege_3D_isobar_NW_20160101000000.grib*
+Here is the path for the NW zone, year 2016, January, ARPEGE model, isobar level, day 1:  
+*/data/NW/weather_models/3D_parameters/*  
+*NW_weather_models_3D_parameters_2016.tar.gz/*  
+*NW_weather_models_3D_parameters_2016.tar/*  
+*NW_weather_models_3D_parameters_2016/*  
+*NW_weather_models_3D_parameters_201601.tar.gz/*  
+*NW_weather_models_3D_parameters_201601.tar/*  
+*201601/ARPEGE/3D_isobar/*  
+*arpege_3D_isobar_NW_20160101000000.grib*
