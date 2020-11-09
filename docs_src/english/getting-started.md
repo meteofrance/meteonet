@@ -2,7 +2,7 @@
 
 ## Kaggle
 
-You are new to MeteoNet ? You can start by looking at the data on [Kaggle](https://www.kaggle.com/katerpillar/meteonet) where you will find notebooks to help you explore, cross-check all data types and predict time series! You can contribute to challenges and/or propose yours! 
+You are new to MeteoNet? You can start by looking at the data on [Kaggle](https://www.kaggle.com/katerpillar/meteonet) where you will find notebooks to help you explore, cross-check all data types and predict time series! You can contribute to challenges and/or propose yours! 
 
 No need to install anything, you just have to create a Kaggle account and you can start playing with MeteoNet!
 
@@ -26,4 +26,6 @@ Now, you should be able to open each notebook and explore the sample data!
 
 After checking the notebooks, you should have all you need to start playing around with the real dataset. You can download it [here](https://meteonet.umr-cnrm.fr/dataset/).
 
+## Slack workspace
 
+If you have any question and/or suggestion (about the data, the toolbox, the use-cases, the kaggle page...), do not hesitate to go to our [Slack workspace](https://tinyurl.com/meteonet-slack)! 
