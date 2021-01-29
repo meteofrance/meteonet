@@ -15,7 +15,7 @@
     
     
       
-        <title>Ground Observations - MeteoNet's Documentation</title>
+        <title>Land-Sea and Relief Masks - MeteoNet's Documentation</title>
       
     
     
@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ground-observations" class="md-skip">
+        <a href="#land-sea-and-relief-masks" class="md-skip">
           Skip to content
         </a>
       
@@ -77,7 +77,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Ground Observations
+              Land-Sea and Relief Masks
             
           </span>
         </div>
@@ -315,67 +315,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ground Observations
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Ground Observations" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../ground-observations/" title="Ground Observations" class="md-nav__link">
       Ground Observations
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-files-organization" class="md-nav__link">
-    1. Files organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-metadata" class="md-nav__link">
-    2. Metadata
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-meteorological-parameters" class="md-nav__link">
-    3. Meteorological parameters
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -407,23 +351,60 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../satellite/" title="Satellite data" class="md-nav__link">
-      Satellite data
-    </a>
-  </li>
-
-        
-          
-          
-          
+  
 
 
-  <li class="md-nav__item">
-    <a href="../land-relief-masks/" title="Land-Sea and Relief Masks" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Land-Sea and Relief Masks
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Land-Sea and Relief Masks" class="md-nav__link md-nav__link--active">
       Land-Sea and Relief Masks
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-description" class="md-nav__link">
+    1. Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-files-organization" class="md-nav__link">
+    2. Files organization
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -667,22 +648,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-files-organization" class="md-nav__link">
-    1. Files organization
+  <a href="#1-description" class="md-nav__link">
+    1. Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-metadata" class="md-nav__link">
-    2. Metadata
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-meteorological-parameters" class="md-nav__link">
-    3. Meteorological parameters
+  <a href="#2-files-organization" class="md-nav__link">
+    2. Files organization
   </a>
   
 </li>
@@ -699,7 +673,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/meteofrance/meteonet/edit/master/docs/english/data/ground-observations.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/meteofrance/meteonet/edit/master/docs/english/data/land-relief-masks.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -707,100 +681,26 @@
                   
                 
                 
-                <h1 id="ground-observations">Ground Observations</h1>
-<p><img alt="Masks" src="../../../img/GroundStationsObservations.png" /></p>
-<p>Hundreds of observation stations are built throughout the French territory, each one fitted with several sensors measuring parameters such as temperature, pressure, wind... Each parameter is measured every 6 minutes and each file contains 1 month of data for each geographical area ('NW' for North-West of France and 'SE' for South-East of France). </p>
-<h3 id="1-files-organization">1. Files organization</h3>
-<p>For each zone, the files are stored per year with 2 compression levels (.tar.gz and .tar). </p>
-<p>Example</p>
-<p>Here is the path for the NW zone, year 2016 :<br />
-<em>/data/NW/ground_stations/</em><br />
-<em>NW_ground_stations_2016.tar.gz/</em><br />
-<em>NW2016.tar/NW2016.csv</em></p>
-<h3 id="2-metadata">2. Metadata</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>number_sta</td>
-<td>ground station ID</td>
-<td>-</td>
-</tr>
-<tr>
-<td>lat</td>
-<td>latitude</td>
-<td>decimal degrees (10<sup>-1</sup> °)</td>
-</tr>
-<tr>
-<td>lon</td>
-<td>longitude</td>
-<td>decimal degrees (10<sup>-1</sup> °)</td>
-</tr>
-<tr>
-<td>height_sta</td>
-<td>station height</td>
-<td>meters (m)</td>
-</tr>
-<tr>
-<td>date</td>
-<td>a datetime object</td>
-<td>format 'YYYY-MM-DD HH: mm :ss'</td>
-</tr>
-</tbody>
-</table>
-<h3 id="3-meteorological-parameters">3. Meteorological parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>dd</td>
-<td>Wind direction</td>
-<td>degrees (°)</td>
-</tr>
-<tr>
-<td>ff</td>
-<td>Wind speed</td>
-<td>m.s<sup>-1</sup></td>
-</tr>
-<tr>
-<td>precip</td>
-<td>Precipitation during the reporting period</td>
-<td>kg.m<sup>2</sup></td>
-</tr>
-<tr>
-<td>hu</td>
-<td>Humidity</td>
-<td>percentage (%)</td>
-</tr>
-<tr>
-<td>td</td>
-<td><a href="../../glossary/#dew-point">Dew point</a></td>
-<td>Kelvin (K)</td>
-</tr>
-<tr>
-<td>t</td>
-<td>Temperature</td>
-<td>Kelvin (K)</td>
-</tr>
-<tr>
-<td>psl</td>
-<td>Pressure reduced to sea level</td>
-<td>Pascal (Pa)</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="land-sea-and-relief-masks">Land-Sea and Relief Masks</h1>
+<h2 id="1-description">1. Description</h2>
+<p><img alt="Masks" src="../../../img/Masks.png" /></p>
+<p>For each geographical zone (North-West (NW) of France and South-East (SE) of France), two different masks are stored in a GRIB file:</p>
+<ul>
+<li>
+<p>the <strong>land-sea mask</strong>, stored in the <code>lsm</code> file. The values are binary : 0 for sea and 1 for land.</p>
+</li>
+<li>
+<p>the <strong>relief mask</strong>, stored in the <code>p3008</code> file. The values are in meters.</p>
+</li>
+</ul>
+<p>The spatial resolution of the masks is 0.025°. </p>
+<p>Note : When you open a GRIB file with the library xarray, a new associated <code>.idx</code> file is created. </p>
+<h2 id="2-files-organization">2. Files organization</h2>
+<p>The files are stored by zone :</p>
+<ul>
+<li>NW zone : <em>/data/NW/masks/NW_masks.grib</em></li>
+<li>SE zone : <em>/data/SE/masks/SE_masks.grib</em></li>
+</ul>
                 
               
               
@@ -819,7 +719,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../summary/" title="Dataset Summary" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../weather-models/" title="Weather Forecast Models" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -828,19 +728,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Dataset Summary
+                Weather Forecast Models
               </div>
             </div>
           </a>
         
         
-          <a href="../rain-radar/" title="Rain Radar" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../glossary/" title="Glossary" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Rain Radar
+                Glossary
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

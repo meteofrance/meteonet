@@ -51,6 +51,7 @@ nav:
       - 'english/data/ground-observations.md'
       - 'english/data/rain-radar.md'
       - 'english/data/weather-models.md'
+      - 'english/data/satellite.md'
       - 'english/data/land-relief-masks.md'
     - 'english/glossary.md'
     - 'english/help.md'
