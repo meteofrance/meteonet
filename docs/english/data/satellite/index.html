@@ -683,6 +683,21 @@
 <p><img alt="Masks" src="../../../img/CT_Sat.png" /></p>
 <p><a name="ct_satellite"></a></p>
 <h2 id="1-cloud-type-ct-data">1. Cloud Type (CT) data</h2>
+<p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
+<p>For each pixel, the value represents a category of cloud type (16 classes in total):</p>
+<ul>
+<li>0:No data</li>
+<li>1:Cloud-free land</li>
+<li>2:Cloud-free sea</li>
+<li>3:Snow over land</li>
+<li>4:Sea ice</li>
+<li>5:Very low clouds</li>
+<li>6:Low clouds</li>
+<li>...</li>
+</ul>
+<p>The spatial resolution is 0.03° and the time step is 15 minutes but some dates can be missing (due to problems in original data, so we can do anything.</p>
+<p>It is about a METEO FRANCE data fusion product. It combines different outputs (satellite imagery, numerical weather prediction parameters..etc) to compute the Cloud Type product. For more information, cf the <a href="https://www.nwcsaf.org/Downloads/GEO/2018/Documents/Scientific_Docs/NWC-CDOP3-GEO-MF-CMS-SCI-UM-Cloud_v1.0.pdf">official documentation</a> (from page 26).</p>
+<p><img alt="Masks" src="../../../img/CT_Sat_2.png" /></p>
                 
               
               

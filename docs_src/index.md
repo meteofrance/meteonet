@@ -12,9 +12,9 @@ The data spans over 3 years, 2016 to 2018, and covers two geographical areas : t
 
 ![Map](img/Map.png)
 
-The dataset regroups **ground station observations**, **land-sea and relief masks**, **rain radar observations**, and **weather forecasting models**. We also plan to give you satellite images very soon!
+The dataset regroups **ground station observations**, **satellite images**, **rain radar observations**, **weather forecasting models** and **land-sea and relief masks**.
 
-![Data](img/Data.png)
+![Data](img/data2.png)
 
 If you want to **start exploring our dataset**, check out [Getting Started with MeteoNet](getting-started)!
 
