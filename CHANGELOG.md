@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## Released
 
+## 1.0.0 - 2020-04-02
+
+- Add new data : satellite CT ( Cloud Type) data with the associated documents (the notebook to open CT data and the documentation)
+
 ## 0.1.1 - 2020-03-03
 
 - Use a new supported basemap library called Cartopy (it replaces Basemap). Update the *master* branch

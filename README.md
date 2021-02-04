@@ -15,7 +15,7 @@ MeteoNet is a meteorological dataset released by METEO FRANCE, the French nation
 
 The data spans over 3 years, 2016 to 2018, and covers two geographical areas : the north-western and south-eastern quarters of France.
 
-The dataset regroups ground station observations, land-sea and relief masks, radar observations and weather models forecasts.
+The dataset regroups ground station observations, land-sea and relief masks, radar observation, weather models forecasts and satellite data. 
 
 # How to use this repository ?<a name="description"></a>
 
