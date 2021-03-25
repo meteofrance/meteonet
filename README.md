@@ -28,7 +28,7 @@ The notebooks rely on the meteonet_toolbox package and we recommend that you ins
 
 # Installing the toolbox<a name="installation"></a>
 
-All the install instructions for our toolbox are available [here](https://meteofrance.github.io/meteonet/install/) in our documentation.
+All the install instructions for our toolbox are available [here](https://meteofrance.github.io/meteonet/english/install/) in our documentation.
 
 # Licence <a name="licence"></a>
 
