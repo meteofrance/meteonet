@@ -1,3 +1,5 @@
+import json
+
 #coordinates of boundaries of study zones
 def create_dic_borne(N,S,W,E):
     dic = {
@@ -51,3 +53,35 @@ CT_16_COLOR_MAP = [[0.39215686, 0.39215686, 0.39215686],
                    [0., 0.94117647, 0.94117647],
                    [0.35294118, 0.78431373, 0.62745098],
                    [1, 0.6, 1]]
+
+#color palette about VIS06 channel satellite data
+def vis_palette(palette_name):
+    m = []
+    M = []
+    c = []
+    with open('../../meteonet_toolbox/color_palettes/'+ palette_name) as f:
+        color_data = json.load(f)
+    for i in range(0,len(color_data['levels'])):
+        m.append(color_data['levels'][i]['min'])
+        M.append(color_data['levels'][i]['max'])
+        c.append(color_data['levels'][i]['color'])
+    m.append(M[len(M)-1])
+    m.insert(0,-1)
+    c.insert(0,'dodgerblue')
+    return m,c
+
+#color palette about IR channels satellite data
+def ir_palette(palette_name):
+    m = []
+    M = []
+    c = []
+    with open('../../meteonet_toolbox/color_palettes/'+ palette_name) as f:
+        color_data = json.load(f)
+    for i in range(0,len(color_data['levels'])):
+        m.append(color_data['levels'][i]['min'])
+        M.append(color_data['levels'][i]['max'])
+        c.append(color_data['levels'][i]['color'])
+    m.insert(0,M[0])
+    m.reverse()
+    c.reverse()
+    return m,c
