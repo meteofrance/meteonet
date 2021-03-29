@@ -414,6 +414,79 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-channels-data" class="md-nav__link">
+    2. Channels data
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Channels data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-visible-channel-vis" class="md-nav__link">
+    2.1 Visible channel (VIS)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Visible channel (VIS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-description" class="md-nav__link">
+    2.1.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-infrared-channels-ir" class="md-nav__link">
+    2.2 Infrared channels (IR)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Infrared channels (IR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-description" class="md-nav__link">
+    2.2.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-water-vapor-channel-wv" class="md-nav__link">
+    2.3 Water vapor channel (WV)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Water vapor channel (WV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-description" class="md-nav__link">
+    2.3.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -699,6 +772,79 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-channels-data" class="md-nav__link">
+    2. Channels data
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Channels data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-visible-channel-vis" class="md-nav__link">
+    2.1 Visible channel (VIS)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Visible channel (VIS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-description" class="md-nav__link">
+    2.1.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-infrared-channels-ir" class="md-nav__link">
+    2.2 Infrared channels (IR)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Infrared channels (IR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-description" class="md-nav__link">
+    2.2.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-water-vapor-channel-wv" class="md-nav__link">
+    2.3 Water vapor channel (WV)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Water vapor channel (WV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-description" class="md-nav__link">
+    2.3.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -739,12 +885,74 @@
 <p>The spatial resolution is 0.03° and the time step is 15 minutes but some dates can be missing (due to problems in original data, so we can do anything.</p>
 <p>It is about a METEO FRANCE data fusion product. It combines different outputs (satellite imagery, numerical weather prediction parameters..etc) to compute the Cloud Type product. For more information, cf the <a href="https://www.nwcsaf.org/Downloads/GEO/2018/Documents/Scientific_Docs/NWC-CDOP3-GEO-MF-CMS-SCI-UM-Cloud_v1.0.pdf">official documentation</a> (from page 26).</p>
 <p><img alt="Masks" src="../../../img/CT_Sat_2.png" /></p>
+<p><strong>Note</strong><a name="note"></a>: after we put these data online, we learned there is a parallax effect which is not corrected. According to the official documentation (<em>User Manual of the Parallax Correction Processor of the NWC/GEO</em>): </p>
+<p>Due to the Geostationary oblique view of features far to the sub-satellite point (ssp), the positions of objects  placed  above  the  surface  are  affected  by  parallax.  As  it  is  shown  in  Figure  1,  a  high  cloud located  on  the  vertical  of  the  site  A  in  the  Earth surface  is  seen  by  a  geostationary  satellite  in  the position of a different site B.</p>
+<p><img alt="Masks" src="../../../img/parallax_effect.PNG" /></p>
 <h3 id="12-files-organization">1.2 Files organization</h3>
 <p>The files are stored by zone and per year:</p>
 <ul>
 <li>NW zone: <em>/data/NW/satellite/CT_NW_"year".nc</em></li>
 <li>SE zone: <em>/data/SE/satellite/CT_SE_"year".nc</em></li>
 </ul>
+<h2 id="2-channels-data">2. Channels data</h2>
+<p>The satellites emit signals at different wavelengths and capture signals reflected and/or re-emitted by the clouds or by the earth surface in clear skies. A channel means a range of wavelenghts : visible, infrared... </p>
+<h3 id="21-visible-channel-vis">2.1 Visible channel (VIS)</h3>
+<h4 id="211-description">2.1.1 Description</h4>
+<p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
+<p>About visible channel, for each pixel, the value represents the radiance (in %), which represents the proportion of radiation reflected by the target (clouds or ground, sea if there are no cloud), in the visible domain. </p>
+<p>The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything). The missing values are -1.</p>
+<p>/!\The visible channel is by definition not visible at night; there are huge gaps of distribution between the day and night.</p>
+<p><img alt="Masks" src="../../../img/vis_doc.PNG" /></p>
+<p><strong>What are the use cases and the limitations of the visible channel in meteorology?</strong></p>
+<p>Use cases:</p>
+<ul>
+<li>Detect the clouds more reflecting than the grounds and their scructures (in particular the low clouds);</li>
+<li>Track the clouds and the vegetation;</li>
+<li>Observe the aerosols.</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Bad detection of weak reflectivity objects (volcanic ashes, cirrus or cirrostratus clouds);</li>
+<li>Bad detection of non opaque targets, especially if there are below objects with a strong reflectivity (for example, thin cirrus clouds above a snowy ground).</li>
+</ul>
+<p>A parallax effect is not corrected into the satellite data in MeteoNet (cf <a href="#note">Note</a> above for more details).</p>
+<h3 id="22-infrared-channels-ir">2.2 Infrared channels (IR)</h3>
+<h4 id="221-description">2.2.1 Description</h4>
+<p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
+<p>About infrared channels, for each pixel, the value represents the <a href="../../glossary/#brightness_t"> brightness temperature</a>  (in °C) of the target (clouds or ground, sea if there are no cloud), in the infrared domain.  </p>
+<p>The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything).</p>
+<p><img alt="Masks" src="../../../img/ir_doc.PNG" /></p>
+<p><strong>What are the use cases and the limitations of the infrared channels in meteorology?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Use cases</th>
+<th>Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IR039 (3.92 µm)</td>
+<td>Detect fogs and low clouds at night, fires at day.</td>
+<td>/</td>
+</tr>
+<tr>
+<td>IR108 (10.8 µm)</td>
+<td>Detect clouds that are colder than the ground. Allows to get an idea about the relative height of cloud tops. Detect cirrus clouds.</td>
+<td>The measure can be disturbed if the objects located below the target emit an intense radiation (for example, thin clouds above a very hot land surface). It is sometimes difficult to distinguish low clouds from the ground surface.</td>
+</tr>
+</tbody>
+</table>
+<p>A parallax effect is not corrected into the satellite data in MeteoNet (cf <a href="#note">Note</a> above for more details).</p>
+<h3 id="23-water-vapor-channel-wv">2.3 Water vapor channel (WV)</h3>
+<h4 id="231-description">2.3.1 Description</h4>
+<p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
+<p>The channel here (6.25 µm) is called "water vapor", because for that wavelength range, the water vapor absorbs a large part of these radiations. It is very useful to know the water vapor content in the atmosphere. </p>
+<p>About infrared channels, for each pixel, the value represents the <a href="../../glossary/#brightness_t"> brightness temperature</a>  (in °C) of the target (clouds or ground, sea if there are no cloud), in the infrared domain.</p>
+<p>The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything).</p>
+<p><img alt="Masks" src="../../../img/wv_doc.PNG" /></p>
+<p><strong>What are the use cases and the limitations of the infrared channels in meteorology?</strong></p>
                 
               
               

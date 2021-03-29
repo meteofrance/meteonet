@@ -85,3 +85,17 @@ def ir_palette(palette_name):
     m.reverse()
     c.reverse()
     return m,c
+
+#color palette about WV062 channel satellite data
+def wv_palette(palette_name):
+    m = []
+    M = []
+    c = []
+    with open('../../meteonet_toolbox/color_palettes/'+ palette_name) as f:
+        color_data = json.load(f)
+    for i in range(0,len(color_data['levels'])):
+        m.append(color_data['levels'][i]['min'])
+        M.append(color_data['levels'][i]['max'])
+        c.append(color_data['levels'][i]['color'])
+    m.append(M[len(M)-1])
+    return m,c

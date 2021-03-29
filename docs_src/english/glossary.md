@@ -41,3 +41,9 @@ The U and V wind components are the two horizontal wind speed vector components 
 * U : from west to east
   
 * V : from south to north
+
+<a name="brightness_t"></a>
+
+## Brightness Temperature
+
+A descriptive measure of radiation in terms of the temperature of a hypothetical blackbody emitting an identical amount of radiation at the same wavelength. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Brightness_temperature), the American Meteorological Society.  
