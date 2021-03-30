@@ -6,7 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## Released
 
-## 1.0.0 - 2020-04-02
+## 1.0.1 - 2021-
+
+
+## 1.0.0 - 2021-02-04
 
 - Add new data : satellite CT ( Cloud Type) data with the associated documents (the notebook to open CT data and the documentation)
 

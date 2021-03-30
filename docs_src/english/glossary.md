@@ -46,4 +46,32 @@ The U and V wind components are the two horizontal wind speed vector components 
 
 ## Brightness Temperature
 
-A descriptive measure of radiation in terms of the temperature of a hypothetical blackbody emitting an identical amount of radiation at the same wavelength. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Brightness_temperature), the American Meteorological Society.  
+A descriptive measure of radiation in terms of the temperature of a hypothetical blackbody emitting an identical amount of radiation at the same wavelength. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Brightness_temperature), the American Meteorological Society.
+
+<a name="troposphere"></a>
+
+## Troposphere
+
+That portion of the atmosphere from the earth's surface to the tropopause; that is, the lowest 1020 km (612 mi) of the atmosphere; the portion of the atmosphere where most weather occurs. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Troposphere). 
+
+<a name="tropopause"></a>
+
+## Tropopause 
+
+The boundary between the troposphere and stratosphere, usually characterized by an abrupt change of lapse rate. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Tropopause). 
+
+
+<a name="pot-vorticity"></a>
+
+## Potential Vorticity
+
+A quantity which is proportional to the product of vorticity and stratification. When applied to air parcels, aids the understanding of cyclogenesis. 
+
+<a name="jet-stream"></a>
+
+## Jet Stream 
+
+Relatively strong winds concentrated within a narrow stream in the atmosphere. For more information, cf the [Glossary of the Meterology of the AMS](https://glossary.ametsoc.org/wiki/Jet_stream).
+
+
+

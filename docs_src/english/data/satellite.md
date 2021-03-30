@@ -73,6 +73,13 @@ Limitations:
 
 A parallax effect is not corrected into the satellite data in MeteoNet (cf [Note](#note) above for more details).
 
+### Files organization
+
+The files are stored by zone and per year:
+
+* NW zone: */data/NW/satellite/VIS06_NW_"year".nc*
+* SE zone: */data/SE/satellite/VIS06_SE_"year".nc*
+
 ### Infrared channels (IR)
 
 #### Description
@@ -94,20 +101,48 @@ The spatial resolution is 0.03° and the time step is 1 hour but some dates can 
 
 A parallax effect is not corrected into the satellite data in MeteoNet (cf [Note](#note) above for more details).
 
+### Files organization
+
+The files are stored by channel (IR039 or IR108), zone and per year:
+
+* NW zone, IR039 channel: */data/NW/satellite/IR039_NW_"year".nc*
+* SE zone, IR108 channel: */data/SE/satellite/IR108_SE_"year".nc*
+
 ### Water vapor channel (WV)
 
 #### Description
 
 You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. 
 
-The channel here (6.25 µm) is called "water vapor", because for that wavelength range, the water vapor absorbs a large part of these radiations. It is very useful to know the water vapor content in the atmosphere. 
+The channel here (6.25 µm) is called "water vapor", because for that wavelength range, the water vapor absorbs a large part of these radiations. It is very useful to know the water vapor content in the atmosphere. That channel is sensitive to high atmospheric layers (above 600hPa) with a stronger sensitivity near to 350hPa. 
 
-About infrared channels, for each pixel, the value represents the [ brightness temperature](../../glossary/#brightness_t)  (in °C) of the target (clouds or ground, sea if there are no cloud), in the infrared domain.
+For each pixel, the value represents the [ brightness temperature](../../glossary/#brightness_t)  (in °C) of the highest dense layer of water vapor (or cloud). 
 
 The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything).
+
+The color palette is in black & white:
+
+* In black: in the dry zones where the water vapor concentrates to low atmospheric layers 
+* In white: in a very wet atmosphere at high altitude 
 
 ![Masks](../../img/wv_doc.PNG)
 
 **What are the use cases and the limitations of the infrared channels in meteorology?**
 
+Use cases:
 
+* Visualize the water vapor circulation and distribution at high altitude (high [troposphere](../../glossary/#troposphere)). 
+* Observe the [tropopause](../../glossary/#tropopause) anomalies ([potential vorticity](../../glossary/#pot-vorticity) maximum in altitude), the vertical movements and sometimes the [jet streams](../../glossary/#jet-stream). 
+  
+Limitations:
+
+* That measure is very sensitive to temperature, so it can be difficult to analyze in winter on continental areas or in summer on hot areas. 
+
+A parallax effect is not corrected into the satellite data in MeteoNet (cf [Note](#note) above for more details).
+
+### Files organization
+
+The files are stored by zone and per year:
+
+* NW zone: */data/NW/satellite/WV062_NW_"year".nc*
+* SE zone: */data/SE/satellite/WV062_SE_"year".nc*

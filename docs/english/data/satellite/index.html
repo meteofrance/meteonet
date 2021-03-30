@@ -443,31 +443,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-infrared-channels-ir" class="md-nav__link">
-    2.2 Infrared channels (IR)
-  </a>
-  
-    <nav class="md-nav" aria-label="2.2 Infrared channels (IR)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#221-description" class="md-nav__link">
-    2.2.1 Description
+  <a href="#22-files-organization" class="md-nav__link">
+    2.2 Files organization
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#23-water-vapor-channel-wv" class="md-nav__link">
-    2.3 Water vapor channel (WV)
+  <a href="#23-infrared-channels-ir" class="md-nav__link">
+    2.3 Infrared channels (IR)
   </a>
   
-    <nav class="md-nav" aria-label="2.3 Water vapor channel (WV)">
+    <nav class="md-nav" aria-label="2.3 Infrared channels (IR)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -479,6 +466,40 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-files-organization" class="md-nav__link">
+    2.4 Files organization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-water-vapor-channel-wv" class="md-nav__link">
+    2.5 Water vapor channel (WV)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Water vapor channel (WV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-description" class="md-nav__link">
+    2.5.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-files-organization" class="md-nav__link">
+    2.6 Files organization
+  </a>
   
 </li>
         
@@ -801,31 +822,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-infrared-channels-ir" class="md-nav__link">
-    2.2 Infrared channels (IR)
-  </a>
-  
-    <nav class="md-nav" aria-label="2.2 Infrared channels (IR)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#221-description" class="md-nav__link">
-    2.2.1 Description
+  <a href="#22-files-organization" class="md-nav__link">
+    2.2 Files organization
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#23-water-vapor-channel-wv" class="md-nav__link">
-    2.3 Water vapor channel (WV)
+  <a href="#23-infrared-channels-ir" class="md-nav__link">
+    2.3 Infrared channels (IR)
   </a>
   
-    <nav class="md-nav" aria-label="2.3 Water vapor channel (WV)">
+    <nav class="md-nav" aria-label="2.3 Infrared channels (IR)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -837,6 +845,40 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-files-organization" class="md-nav__link">
+    2.4 Files organization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-water-vapor-channel-wv" class="md-nav__link">
+    2.5 Water vapor channel (WV)
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Water vapor channel (WV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-description" class="md-nav__link">
+    2.5.1 Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-files-organization" class="md-nav__link">
+    2.6 Files organization
+  </a>
   
 </li>
         
@@ -916,8 +958,14 @@
 <li>Bad detection of non opaque targets, especially if there are below objects with a strong reflectivity (for example, thin cirrus clouds above a snowy ground).</li>
 </ul>
 <p>A parallax effect is not corrected into the satellite data in MeteoNet (cf <a href="#note">Note</a> above for more details).</p>
-<h3 id="22-infrared-channels-ir">2.2 Infrared channels (IR)</h3>
-<h4 id="221-description">2.2.1 Description</h4>
+<h3 id="22-files-organization">2.2 Files organization</h3>
+<p>The files are stored by zone and per year:</p>
+<ul>
+<li>NW zone: <em>/data/NW/satellite/VIS06_NW_"year".nc</em></li>
+<li>SE zone: <em>/data/SE/satellite/VIS06_SE_"year".nc</em></li>
+</ul>
+<h3 id="23-infrared-channels-ir">2.3 Infrared channels (IR)</h3>
+<h4 id="231-description">2.3.1 Description</h4>
 <p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
 <p>About infrared channels, for each pixel, the value represents the <a href="../../glossary/#brightness_t"> brightness temperature</a>  (in °C) of the target (clouds or ground, sea if there are no cloud), in the infrared domain.  </p>
 <p>The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything).</p>
@@ -945,14 +993,41 @@
 </tbody>
 </table>
 <p>A parallax effect is not corrected into the satellite data in MeteoNet (cf <a href="#note">Note</a> above for more details).</p>
-<h3 id="23-water-vapor-channel-wv">2.3 Water vapor channel (WV)</h3>
-<h4 id="231-description">2.3.1 Description</h4>
+<h3 id="24-files-organization">2.4 Files organization</h3>
+<p>The files are stored by channel (IR039 or IR108), zone and per year:</p>
+<ul>
+<li>NW zone, IR039 channel: <em>/data/NW/satellite/IR039_NW_"year".nc</em></li>
+<li>SE zone, IR108 channel: <em>/data/SE/satellite/IR108_SE_"year".nc</em></li>
+</ul>
+<h3 id="25-water-vapor-channel-wv">2.5 Water vapor channel (WV)</h3>
+<h4 id="251-description">2.5.1 Description</h4>
 <p>You will find one NetCDF file per geographic zone ('NW' for North-West of France and 'SE' for South-East of France) and per year. </p>
-<p>The channel here (6.25 µm) is called "water vapor", because for that wavelength range, the water vapor absorbs a large part of these radiations. It is very useful to know the water vapor content in the atmosphere. </p>
-<p>About infrared channels, for each pixel, the value represents the <a href="../../glossary/#brightness_t"> brightness temperature</a>  (in °C) of the target (clouds or ground, sea if there are no cloud), in the infrared domain.</p>
+<p>The channel here (6.25 µm) is called "water vapor", because for that wavelength range, the water vapor absorbs a large part of these radiations. It is very useful to know the water vapor content in the atmosphere. That channel is sensitive to high atmospheric layers (above 600hPa) with a stronger sensitivity near to 350hPa. </p>
+<p>For each pixel, the value represents the <a href="../../glossary/#brightness_t"> brightness temperature</a>  (in °C) of the highest dense layer of water vapor (or cloud). </p>
 <p>The spatial resolution is 0.03° and the time step is 1 hour but some dates can be missing (due to problems in original data, so we can do anything).</p>
+<p>The color palette is in black &amp; white:</p>
+<ul>
+<li>In black: in the dry zones where the water vapor concentrates to low atmospheric layers </li>
+<li>In white: in a very wet atmosphere at high altitude </li>
+</ul>
 <p><img alt="Masks" src="../../../img/wv_doc.PNG" /></p>
 <p><strong>What are the use cases and the limitations of the infrared channels in meteorology?</strong></p>
+<p>Use cases:</p>
+<ul>
+<li>Visualize the water vapor circulation and distribution at high altitude (high <a href="../../glossary/#troposphere">troposphere</a>). </li>
+<li>Observe the <a href="../../glossary/#tropopause">tropopause</a> anomalies (<a href="../../glossary/#pot-vorticity">potential vorticity</a> maximum in altitude), the vertical movements and sometimes the <a href="../../glossary/#jet-stream">jet streams</a>. </li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>That measure is very sensitive to temperature, so it can be difficult to analyze in winter on continental areas or in summer on hot areas. </li>
+</ul>
+<p>A parallax effect is not corrected into the satellite data in MeteoNet (cf <a href="#note">Note</a> above for more details).</p>
+<h3 id="26-files-organization">2.6 Files organization</h3>
+<p>The files are stored by zone and per year:</p>
+<ul>
+<li>NW zone: <em>/data/NW/satellite/WV062_NW_"year".nc</em></li>
+<li>SE zone: <em>/data/SE/satellite/WV062_SE_"year".nc</em></li>
+</ul>
                 
               
               
