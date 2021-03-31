@@ -1,0 +1,647 @@
+{
+	"name": "geostationary_vs_mtl",
+	"description": "Palette visible météotel",
+	"unit": "%",
+	"obs_name": "albédo",
+	"levels": [{
+			"type": "limit",
+			"min_pix": 0,
+			"max_pix": 1,
+			"min": 0,
+			"max": 0.75,
+			"color": "#010101ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 2,
+			"max_pix": 3,
+			"min": 0.75,
+			"max": 1.5,
+			"color": "#040404ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 4,
+			"max_pix": 6,
+			"min": 1.5,
+			"max": 2.5,
+			"color": "#080808ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 7,
+			"max_pix": 8,
+			"min": 2.5,
+			"max": 3.5,
+			"color": "#0c0c0cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 9,
+			"max_pix": 11,
+			"min": 3.5,
+			"max": 4.5,
+			"color": "#101010ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 12,
+			"max_pix": 13,
+			"min": 4.5,
+			"max": 5.25,
+			"color": "#141414ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 14,
+			"max_pix": 15,
+			"min": 5.25,
+			"max": 6,
+			"color": "#181818ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 16,
+			"max_pix": 18,
+			"min": 6,
+			"max": 7.25,
+			"color": "#1c1c1cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 19,
+			"max_pix": 20,
+			"min": 7.25,
+			"max": 8,
+			"color": "#202020ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 21,
+			"max_pix": 23,
+			"min": 8,
+			"max": 9.25,
+			"color": "#242424ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 24,
+			"max_pix": 25,
+			"min": 9.25,
+			"max": 10,
+			"color": "#282828ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 26,
+			"max_pix": 27,
+			"min": 10,
+			"max": 10.75,
+			"color": "#2c2c2cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 28,
+			"max_pix": 30,
+			"min": 10.75,
+			"max": 12,
+			"color": "#303030ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 31,
+			"max_pix": 32,
+			"min": 12,
+			"max": 12.75,
+			"color": "#343434ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 33,
+			"max_pix": 35,
+			"min": 12.75,
+			"max": 14,
+			"color": "#383838ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 36,
+			"max_pix": 37,
+			"min": 14,
+			"max": 14.75,
+			"color": "#3c3c3cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 38,
+			"max_pix": 40,
+			"min": 14.75,
+			"max": 16,
+			"color": "#404040ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 41,
+			"max_pix": 42,
+			"min": 16,
+			"max": 16.75,
+			"color": "#444444ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 43,
+			"max_pix": 44,
+			"min": 16.75,
+			"max": 17.5,
+			"color": "#484848ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 45,
+			"max_pix": 47,
+			"min": 17.5,
+			"max": 18.75,
+			"color": "#4c4c4cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 48,
+			"max_pix": 49,
+			"min": 18.75,
+			"max": 19.5,
+			"color": "#505050ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 50,
+			"max_pix": 52,
+			"min": 19.5,
+			"max": 20.75,
+			"color": "#555555ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 53,
+			"max_pix": 55,
+			"min": 20.75,
+			"max": 21.75,
+			"color": "#595959ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 56,
+			"max_pix": 57,
+			"min": 21.75,
+			"max": 22.5,
+			"color": "#5d5d5dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 58,
+			"max_pix": 59,
+			"min": 22.5,
+			"max": 23.5,
+			"color": "#616161ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 60,
+			"max_pix": 62,
+			"min": 23.5,
+			"max": 24.5,
+			"color": "#656565ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 63,
+			"max_pix": 67,
+			"min": 24.5,
+			"max": 26.5,
+			"color": "#696969ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 68,
+			"max_pix": 72,
+			"min": 26.5,
+			"max": 28.5,
+			"color": "#6d6d6dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 73,
+			"max_pix": 77,
+			"min": 28.5,
+			"max": 30.5,
+			"color": "#717171ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 78,
+			"max_pix": 82,
+			"min": 30.5,
+			"max": 32.5,
+			"color": "#757575ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 83,
+			"max_pix": 87,
+			"min": 32.5,
+			"max": 34.5,
+			"color": "#797979ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 88,
+			"max_pix": 92,
+			"min": 34.5,
+			"max": 36.25,
+			"color": "#7d7d7dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 93,
+			"max_pix": 97,
+			"min": 36.25,
+			"max": 38.25,
+			"color": "#818181ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 98,
+			"max_pix": 102,
+			"min": 38.25,
+			"max": 39.75,
+			"color": "#858585ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 103,
+			"max_pix": 107,
+			"min": 39.75,
+			"max": 41.75,
+			"color": "#898989ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 108,
+			"max_pix": 112,
+			"min": 41.75,
+			"max": 43.75,
+			"color": "#8d8d8dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 113,
+			"max_pix": 117,
+			"min": 43.75,
+			"max": 45.75,
+			"color": "#919191ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 118,
+			"max_pix": 122,
+			"min": 45.75,
+			"max": 47.75,
+			"color": "#959595ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 123,
+			"max_pix": 127,
+			"min": 47.75,
+			"max": 49.75,
+			"color": "#999999ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 128,
+			"max_pix": 132,
+			"min": 49.75,
+			"max": 51.75,
+			"color": "#9d9d9dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 133,
+			"max_pix": 137,
+			"min": 51.75,
+			"max": 53.5,
+			"color": "#a1a1a1ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 138,
+			"max_pix": 142,
+			"min": 53.5,
+			"max": 55.5,
+			"color": "#a5a5a5ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 143,
+			"max_pix": 148,
+			"min": 55.5,
+			"max": 58,
+			"color": "#aaaaaaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 149,
+			"max_pix": 153,
+			"min": 58,
+			"max": 59.75,
+			"color": "#aeaeaeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 154,
+			"max_pix": 158,
+			"min": 59.75,
+			"max": 61.75,
+			"color": "#b2b2b2ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 159,
+			"max_pix": 163,
+			"min": 61.75,
+			"max": 63.75,
+			"color": "#b6b6b6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 164,
+			"max_pix": 168,
+			"min": 63.75,
+			"max": 65.75,
+			"color": "#bababaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 169,
+			"max_pix": 173,
+			"min": 65.75,
+			"max": 67.75,
+			"color": "#bebebeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 174,
+			"max_pix": 178,
+			"min": 67.75,
+			"max": 69.75,
+			"color": "#c2c2c2ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 179,
+			"max_pix": 182,
+			"min": 69.75,
+			"max": 71.25,
+			"color": "#c6c6c6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 183,
+			"max_pix": 187,
+			"min": 71.25,
+			"max": 73.25,
+			"color": "#cacacaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 188,
+			"max_pix": 192,
+			"min": 73.25,
+			"max": 75.25,
+			"color": "#cececeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 193,
+			"max_pix": 198,
+			"min": 75.25,
+			"max": 77.5,
+			"color": "#d2d2d2ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 199,
+			"max_pix": 203,
+			"min": 77.5,
+			"max": 79.5,
+			"color": "#d6d6d6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 204,
+			"max_pix": 208,
+			"min": 79.5,
+			"max": 81.5,
+			"color": "#dadadaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 209,
+			"max_pix": 214,
+			"min": 81.5,
+			"max": 83.75,
+			"color": "#dededeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 215,
+			"max_pix": 219,
+			"min": 83.75,
+			"max": 85.75,
+			"color": "#e2e2e2ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 220,
+			"max_pix": 224,
+			"min": 85.75,
+			"max": 87.75,
+			"color": "#e6e6e6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 225,
+			"max_pix": 230,
+			"min": 87.75,
+			"max": 90,
+			"color": "#eaeaeaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 231,
+			"max_pix": 235,
+			"min": 90,
+			"max": 92,
+			"color": "#eeeeeeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 236,
+			"max_pix": 240,
+			"min": 92,
+			"max": 94,
+			"color": "#f2f2f2ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 241,
+			"max_pix": 246,
+			"min": 94,
+			"max": 96.25,
+			"color": "#f6f6f6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 247,
+			"max_pix": 251,
+			"min": 96.25,
+			"max": 98.75,
+			"color": "#fafafaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 252,
+			"max_pix": 255,
+			"min": 98.75,
+			"max": 100,
+			"color": "#fafafaff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=round(x*100/255.),unit=unit))",
+			"legend": "str('{min:g} {unit} < {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		}
+	]
+}

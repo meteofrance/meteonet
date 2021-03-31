@@ -6,9 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ## Released
 
-## 1.0.0 - 2020-04-02
+## 1.0.1 - 2021-03-31
 
-- Add new data : satellite CT ( Cloud Type) data with the associated documents (the notebook to open CT data and the documentation)
+- Add new data: satellite data from 4 channels (1 visible, 2 infrared and 1 water vapor) with the associated documents (the notebooks to open the data and the documentation)
+
+
+## 1.0.0 - 2021-02-04
+
+- Add new data: satellite CT ( Cloud Type) data with the associated documents (the notebook to open CT data and the documentation)
 
 ## 0.1.1 - 2020-03-03
 

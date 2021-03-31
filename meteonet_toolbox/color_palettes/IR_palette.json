@@ -1,0 +1,177 @@
+{
+	"name": "geostationary_ir_ext_meteotel",
+	"description": "Palette Météotel, nombre de niveaux réduit",
+	"unit": "°C",
+	"obs_name": "T",
+	"levels": [{
+			"type": "limit",
+			"min_pix": 1,
+			"max_pix": 28,
+			"min": 51,
+			"max": 9999,
+			"color": "#ff0000ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{obs_name} >= {min:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 29,
+			"max_pix": 56,
+			"min": 37,
+			"max": 50.5,
+			"color": "#ff4000ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 57,
+			"max_pix": 68,
+			"min": 31,
+			"max": 36.5,
+			"color": "#ff8000ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 69,
+			"max_pix": 80,
+			"min": 25,
+			"max": 30.5,
+			"color": "#ffa600ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 81,
+			"max_pix": 92,
+			"min": 19,
+			"max": 24.5,
+			"color": "#010101ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 93,
+			"max_pix": 104,
+			"min": 13,
+			"max": 18.5,
+			"color": "#007000ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 105,
+			"max_pix": 116,
+			"min": 7,
+			"max": 12.5,
+			"color": "#0000c5ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 117,
+			"max_pix": 128,
+			"min": 1,
+			"max": 6.5,
+			"color": "#0000ffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 129,
+			"max_pix": 148,
+			"min": -9,
+			"max": 0.5,
+			"color": "#40a6ffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 149,
+			"max_pix": 168,
+			"min": -19,
+			"max": -9.5,
+			"color": "#74d6ffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 169,
+			"max_pix": 188,
+			"min": -29,
+			"max": -19.5,
+			"color": "#1bdc25ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 189,
+			"max_pix": 208,
+			"min": -39,
+			"max": -29.5,
+			"color": "#43ff4dff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 209,
+			"max_pix": 224,
+			"min": -47,
+			"max": -39.5,
+			"color": "#ffff00ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 225,
+			"max_pix": 240,
+			"min": -55,
+			"max": -47.5,
+			"color": "#ffffffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 241,
+			"max_pix": 256,
+			"min": -63,
+			"max": -55.5,
+			"color": "#ffc8ffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 257,
+			"max_pix": 272,
+			"min": -71,
+			"max": -63.5,
+			"color": "#ff8dffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 273,
+			"max_pix": 101,
+			"min": -9999,
+			"max": -71.5,
+			"color": "#ff42ffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=65-x/2.,unit=unit))",
+			"legend": "str('{obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		}
+	]
+}

@@ -17,7 +17,7 @@ There, for each geographical zone (*/data/NW or SE/*) and for the 3 years you wi
 | **Reflectivity (*old product*)** | 3.9 | 4.0 | **7.9** | */data/NW/radar/reflectivity_old_product/*
 | **Weather models 2D**          | 25.8 | 23.0 | **48.8** | */data/NW/weather_models/2D_parameters/*
 | **Weather models 3D**          | 7.8 | 8.0 | **15.8** | */data/NW/weather_models/3D_parameters/*
-| **Satellite data (CT for now)**  | 4.8 | 4.8 | **9.6** | */data/NW/satellite/*
+| **Satellite data (CT and 4 channels)**  | 24 | 22.8 | **46.8** | */data/NW/satellite/*
 | **Masks**                      | 0.0004 | 0.0004 | **0.001** | */data/NW/masks/*
 | | | | |
-| **TOTAL** | **81.7** | **99.8** | **181.5** |
+| **TOTAL** | **100.9** | **117.8** | **218.7** |

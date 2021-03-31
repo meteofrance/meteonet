@@ -1,0 +1,337 @@
+{
+	"name": "geostationary_wv-62_standard",
+	"description": "Palette WV standard",
+	"unit": "°C",
+	"obs_name": "T",
+	"levels": [{
+			"type": "limit",
+			"min_pix": 1,
+			"max_pix": 86,
+			"min": -9999,
+			"max": -50,
+			"color": "#ffffffff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 87,
+			"max_pix": 88,
+			"min": -49,
+			"max": -49,
+			"color": "#f7f7f7ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 89,
+			"max_pix": 90,
+			"min": -48,
+			"max": -48,
+			"color": "#efefefff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 91,
+			"max_pix": 92,
+			"min": -47,
+			"max": -47,
+			"color": "#e6e6e6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 93,
+			"max_pix": 94,
+			"min": -46,
+			"max": -46,
+			"color": "#dededeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 95,
+			"max_pix": 96,
+			"min": -45,
+			"max": -45,
+			"color": "#d6d6d6ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 97,
+			"max_pix": 98,
+			"min": -44,
+			"max": -44,
+			"color": "#cececeff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 99,
+			"max_pix": 100,
+			"min": -43,
+			"max": -43,
+			"color": "#c5c5c5ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 101,
+			"max_pix": 102,
+			"min": -42,
+			"max": -42,
+			"color": "#bdbdbdff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 103,
+			"max_pix": 104,
+			"min": -41,
+			"max": -41,
+			"color": "#b5b5b5ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 105,
+			"max_pix": 106,
+			"min": -40,
+			"max": -40,
+			"color": "#adadadff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 107,
+			"max_pix": 108,
+			"min": -39,
+			"max": -39,
+			"color": "#a5a5a5ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 109,
+			"max_pix": 110,
+			"min": -38,
+			"max": -38,
+			"color": "#9c9c9cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 111,
+			"max_pix": 112,
+			"min": -37,
+			"max": -37,
+			"color": "#949494ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 113,
+			"max_pix": 114,
+			"min": -36,
+			"max": -36,
+			"color": "#8c8c8cff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 115,
+			"max_pix": 116,
+			"min": -35,
+			"max": -35,
+			"color": "#848484ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 117,
+			"max_pix": 118,
+			"min": -34,
+			"max": -34,
+			"color": "#7b7b7bff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 119,
+			"max_pix": 120,
+			"min": -33,
+			"max": -33,
+			"color": "#737373ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 121,
+			"max_pix": 122,
+			"min": -32,
+			"max": -32,
+			"color": "#6b6b6bff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 123,
+			"max_pix": 124,
+			"min": -31,
+			"max": -31,
+			"color": "#636363ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 125,
+			"max_pix": 126,
+			"min": -30,
+			"max": -30,
+			"color": "#5a5a5aff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 127,
+			"max_pix": 128,
+			"min": -29,
+			"max": -29,
+			"color": "#525252ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 129,
+			"max_pix": 130,
+			"min": -28,
+			"max": -28,
+			"color": "#4a4a4aff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 131,
+			"max_pix": 132,
+			"min": -27,
+			"max": -27,
+			"color": "#424242ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 133,
+			"max_pix": 134,
+			"min": -26,
+			"max": -26,
+			"color": "#3a3a3aff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 135,
+			"max_pix": 136,
+			"min": -25,
+			"max": -25,
+			"color": "#313131ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 137,
+			"max_pix": 138,
+			"min": -24,
+			"max": -24,
+			"color": "#292929ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 139,
+			"max_pix": 140,
+			"min": -23,
+			"max": -23,
+			"color": "#212121ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 141,
+			"max_pix": 142,
+			"min": -22,
+			"max": -22,
+			"color": "#191919ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 143,
+			"max_pix": 144,
+			"min": -21,
+			"max": -21,
+			"color": "#101010ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 145,
+			"max_pix": 146,
+			"min": -20,
+			"max": -20,
+			"color": "#080808ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} = {max:g} {unit}'.format(unit=unit,obs_name=obs_name,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 147,
+			"max_pix": 156,
+			"min": -19,
+			"max": -15,
+			"color": "#060606ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{min:g} {unit} <= {obs_name} <= {max:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min,max=max))"
+		},
+		{
+			"type": "limit",
+			"min_pix": 156,
+			"max_pix": 255,
+			"min": -14,
+			"max": 9999,
+			"color": "#040404ff",
+			"expanded_value": "str('{x:g} {unit}'.format(x=x/2.+180-273,unit=unit))",
+			"legend": "str('{obs_name} >= {min:g} {unit}'.format(unit=unit,obs_name=obs_name,min=min))"
+		}
+	]
+}
