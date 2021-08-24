@@ -30,7 +30,7 @@ In the dataset, we provided the results of **2D models** (forecasts are on a gri
 
 !!! warning
     Some files in the model files are incomplete/corrupted. It comes from the database of our corporation. There are archiving anomalies. We are working on a new version of MeteoNet and will take into account these anomalies. 
-    Meanwhile, you can detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion https://www.kaggle.com/katerpillar/meteonet/discussion/157206 and in Github (https://github.com/meteofrance/meteonet/issues/14). 
+    Meanwhile, we provide the lists of corrupted file names. You can find them directly in CSV files, in the same directories with the weather model data. You can also detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion https://www.kaggle.com/katerpillar/meteonet/discussion/157206 and in Github (https://github.com/meteofrance/meteonet/issues/14). 
 
 
 ## 2D Parameters
@@ -58,7 +58,7 @@ For each model, the data is stored in 4 different GRIB files, depending on the v
     The total precipitation parameter forecast begins at 1h, and not 0h as the other parameters. For now it is about total precipitation since the beginning of the model run. It is planned in a future version to modify that parameter in order to have the total precipitation between two time steps instead. 
 
 !!! info
-    When you open a GRIB file with the xarray library, a new associated ```.idx``` file is created. 
+    When you open a GRIB file with the xarray library by default, a new associated ```.idx``` file is created. You can avoid that file creation by adding an option in the opening command : ```backend_kwargs={"indexpath" : ""}``` (cf notebook examples). 
 
 ### Files organization
 

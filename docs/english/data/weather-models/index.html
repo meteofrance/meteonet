@@ -830,7 +830,7 @@ On the vertical axis (height), the points are not necessarily regurlarly spaced;
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Some files in the model files are incomplete/corrupted. It comes from the database of our corporation. There are archiving anomalies. We are working on a new version of MeteoNet and will take into account these anomalies. 
-Meanwhile, you can detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion <a href="https://www.kaggle.com/katerpillar/meteonet/discussion/157206">https://www.kaggle.com/katerpillar/meteonet/discussion/157206</a> and in Github (<a href="https://github.com/meteofrance/meteonet/issues/14">https://github.com/meteofrance/meteonet/issues/14</a>). </p>
+Meanwhile, we provide the lists of corrupted file names. You can find them directly in CSV files, in the same directories with the weather model data. You can also detect these anomalies by checking the file sizes. For a given file category (zone, level, model type), the files must have exactly the same size. So if some files are smaller than the other one, then these files have anomalies. This has been reported in kaggle in this discussion <a href="https://www.kaggle.com/katerpillar/meteonet/discussion/157206">https://www.kaggle.com/katerpillar/meteonet/discussion/157206</a> and in Github (<a href="https://github.com/meteofrance/meteonet/issues/14">https://github.com/meteofrance/meteonet/issues/14</a>). </p>
 </div>
 <h2 id="2-2d-parameters">2. 2D Parameters</h2>
 <h3 id="21-description">2.1 Description</h3>
@@ -882,7 +882,7 @@ Meanwhile, you can detect these anomalies by checking the file sizes. For a give
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>When you open a GRIB file with the xarray library, a new associated <code>.idx</code> file is created. </p>
+<p>When you open a GRIB file with the xarray library by default, a new associated <code>.idx</code> file is created. You can avoid that file creation by adding an option in the opening command : <code>backend_kwargs={"indexpath" : ""}</code> (cf notebook examples). </p>
 </div>
 <h3 id="22-files-organization">2.2 Files organization</h3>
 <p>The files are stored with 4 compression levels : </p>
