@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## Released
 
+## 1.1.0 - 2021-08-24
+
+- Add file names which are corrupted (about weather models data)
+
 ## 1.0.1 - 2021-03-31
 
 - Add new data: satellite data from 4 channels (1 visible, 2 infrared and 1 water vapor) with the associated documents (the notebooks to open the data and the documentation)
