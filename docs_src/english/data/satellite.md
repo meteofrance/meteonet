@@ -27,23 +27,15 @@ It is about a METEO FRANCE data fusion product. It combines different outputs (s
 
 ![Masks](../../img/CT_Sat_2.png)
 
-<<<<<<< HEAD
-
-**Note**: after we put these data online, we learned there is a parallax effect which is not corrected. According to the official documentation (*User Manual of the Parallax Correction Processor of the NWC/GEO*): 
-=======
 **Note**<a name="note"></a>: after we put these data online, we learned there is a parallax effect which is not corrected. According to the official documentation (*User Manual of the Parallax Correction Processor of the NWC/GEO*): 
->>>>>>> satellite_data
 
 Due to the Geostationary oblique view of features far to the sub-satellite point (ssp), the positions of objects  placed  above  the  surface  are  affected  by  parallax.  As  it  is  shown  in  Figure  1,  a  high  cloud located  on  the  vertical  of  the  site  A  in  the  Earth surface  is  seen  by  a  geostationary  satellite  in  the position of a different site B.
 
 ![Masks](../../img/parallax_effect.PNG)
 
-<<<<<<< HEAD
 
 It induces a shift on data (around 3 or 4 pixels on France) against the ground truth. We remarked also some shift between the data and the basemap (due to the used reprojection function). We plan to fix these two aspects for the next version of the dataset. Sorry for the inconvenience. 
 
-=======
->>>>>>> satellite_data
 ### Files organization
 
 The files are stored by zone and per year:
